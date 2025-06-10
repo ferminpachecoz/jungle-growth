@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body{
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  position: relative;
+  overflow-x: hidden;
+}
+:root{
+  --verde-claro: #097333;
+  --verde-oscuro: #033220;
+  --lila: #D199FA;
+  --naranja: #EF5026;
+  --amarillo: #DDED59;
+  --blanco: #EEF4E9;
+}
+a {
+  text-decoration: none;  /* Quita el subrayado */
+  color: inherit;         /* Usa el color del elemento padre */
+}

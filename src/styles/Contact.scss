@@ -1,0 +1,52 @@
+.contact{
+  h1{
+    font-size: 40px;
+    margin-bottom: 1em;
+    color: var(--verde-oscuro);
+    text-align: center;
+  }
+  .wrapp{
+    position: relative;
+    .fondo-jg{
+      position: absolute;
+      width: 100%;
+      object-fit: cover;
+      top: 0px;
+      left: 0px;
+      filter: brightness(0.6);
+      height: 120vh;
+    }
+    .contenedor{
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100vw;
+      padding: 8em 10em;
+      .logo-jg{
+        width: 400px;
+        margin-left: 6em;
+      }
+      form{
+        label{
+          color: var(--amarillo);
+          font-size: 18px;
+        }
+        input{
+          width: 100%;
+        }
+        textarea{
+          width: 100%;
+        }
+        button{
+          width: 100%;
+          padding: 15px 0px;
+          border-radius: 15px;
+          background-color: var(--amarillo);
+          color: var(--verde-oscuro);
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.footer{
+  background-color: var(--verde-oscuro);
+  padding: 4em 6em;
+  p{
+    color: var(--amarillo);
+  }
+  h3{
+    color: var(--blanco);
+    margin-bottom: 1em;
+  }
+  .menu-rapido{
+    display: flex;
+    flex-direction: column;
+    a{
+      color: var(--amarillo);
+      margin-bottom: 12px;
+    }
+  }
+  i{
+    font-size: 40px;
+    margin-right: 1em;
+    color: var(--amarillo);
+  }
+  img{
+    width: 100px;
+    margin-bottom: 1.4em;
+  }
+}

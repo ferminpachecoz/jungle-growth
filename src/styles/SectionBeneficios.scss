@@ -1,0 +1,31 @@
+.section-beneficios{
+  padding: 4em;
+  .contenedor{
+    padding: 4em 2em;
+    background-color: var(--verde-claro);
+    border-radius: 40px;
+    .content{
+      padding: 0em 2em;
+      .image-container{
+        margin-bottom: 1.2em;
+        display: flex;
+        justify-content: center;
+        .image{
+          background-color: white;
+          padding: 10px;
+          border-radius: 10000px;
+        }
+      }
+      .title{
+        color: var(--amarillo);
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+      }
+      .description{
+        color: var(--blanco);
+        text-align: center;
+      }
+    }
+  }
+}

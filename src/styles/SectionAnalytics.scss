@@ -1,0 +1,42 @@
+.section-analytics{
+  padding: 6em;
+  margin-bottom: 3em;
+  .contenedor{
+    border: 2px solid var(--verde-oscuro);
+    border-radius: 80px;
+    position: relative;
+    padding: 4em 6em;
+    h3{
+      color: var(--verde-claro);
+      font-weight: 900;
+      margin-bottom: 1em;
+      font-size: 30px;
+    }
+    p{
+      color: var(--verde-oscuro);
+      font-size: 20px;
+    }
+    .image{
+      position: relative;
+      img{
+        position: absolute;
+        width: 130%;
+        top: -200px;
+        left: 15%;
+      }
+    }
+    .logo-container{
+      position: absolute;
+      top: 80px;
+      left: -40px;
+      padding: 10px;
+      width: 80px;
+      background-color: var(--verde-oscuro);
+      border-radius: 10000px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

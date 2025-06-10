@@ -1,0 +1,89 @@
+
+.section-bg {
+  background-color: white;
+}
+
+.title-color {
+  color: var(--verde-oscuro);
+  font-size: 40px;
+  margin-bottom: 2em !important;
+}
+
+.subtitle-color {
+  color: var(--verde-claro);
+}
+.section-bg{
+  .image{
+    background-image: url("../../public/textures/pexels-roman-odintsov.jpg");
+    background-size: cover;
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+    .mockup-cont{
+      position: absolute;
+      bottom: 10px;
+      right: 150px;
+      .mockup-img{
+        width: 370px;
+        height: auto;
+        z-index: 10000;
+      }
+    }
+  }
+}
+.pasos{
+  padding-left: 3em !important;
+}
+.step-number {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--naranja);
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.step-number:hover {
+  transform: scale(1.1);
+}
+
+.step-title {
+  color: var(--verde-oscuro);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.step-description {
+  color: var(--verde-claro);
+  line-height: 1.6;
+}
+
+.step-icon {
+  color: var(--verde-claro);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cta-button {
+  background-color: var(--lila);
+  color: var(--verde-oscuro);
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background-color: var(--lila);
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.15);
+}
+
+.border-custom {
+  border-color: var(--verde-claro) !important;
+  opacity: 0.2;
+}
