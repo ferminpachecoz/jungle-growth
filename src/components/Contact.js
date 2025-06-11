@@ -22,7 +22,7 @@ export default function Contact() {
 
       <div className='wrapp position-relative'>
         <motion.img
-          src="/textures/pexels-tarcila.jpg"
+          src="/textures/pexels-tarcila.webp"
           className='fondo-jg'
           alt="Imagen de fondo con hojas"
           initial={{ scale: 1.1, opacity: 0 }}
@@ -98,7 +98,8 @@ export default function Contact() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <motion.img
-              src="/iconos/iconos-10.png"
+              src="/iconos/iconos-10.webp"
+              loading='lazy'
               className='logo-jg'
               alt="Icono Jungle Growth Naranja"
               initial={{ scale: 0.9 }}

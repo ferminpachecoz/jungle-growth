@@ -30,6 +30,7 @@ export default function SecondaryBanner() {
       >
         <motion.img
           src="/textures/pexels-anete-lusina.jpg"
+          loading='lazy'
           className='back'
           alt="Image of sand"
           initial={{ scale: 1.1 }}
@@ -44,7 +45,7 @@ export default function SecondaryBanner() {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <img src="/logos/Logo-Simple-Blanco.png" alt="Logo Simple Blanco" />
+          <img src="/logos/Logo-Simple-Blanco.webp" alt="Logo Simple Blanco" />
         </motion.span>
       </motion.div>
     </motion.div>

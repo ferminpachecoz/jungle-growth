@@ -43,7 +43,8 @@ export default function SectionAnalytics() {
           viewport={{ once: true, amount: 0.5 }}
         >
           <motion.img
-            src="mockup-laptop.png"
+            src="mockup-laptop.webp"
+            loading='lazy'
             alt="Mockup Laptop"
             initial={{ scale: 1.1 }}
             whileInView={{ scale: 1 }}
@@ -59,7 +60,7 @@ export default function SectionAnalytics() {
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <img src="/iconos/iconos-03.png" alt="Icono Jungle Growth" />
+          <img src="/iconos/iconos-03.webp" loading="lazy" alt="Icono Jungle Growth" />
         </motion.span>
       </div>
     </motion.div>

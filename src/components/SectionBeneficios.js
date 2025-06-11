@@ -5,19 +5,19 @@ import { motion } from 'framer-motion'
 export default function SectionBeneficios() {
   const array = [
     {
-      icon: "/iconos/creativity.png",
+      icon: "/iconos/creativity.webp",
       title: "Lorem ipsum",
       description:
         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
     },
     {
-      icon: "/iconos/creativity.png",
+      icon: "/iconos/creativity.webp",
       title: "Lorem ipsum",
       description:
         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
     },
     {
-      icon: "/iconos/creativity.png",
+      icon: "/iconos/creativity.webp",
       title: "Lorem ipsum",
       description:
         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
@@ -59,7 +59,7 @@ export default function SectionBeneficios() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <img src={item.icon} alt={item.title} />
+                  <img src={item.icon} loading='lazy' alt={item.title} />
                 </motion.span>
               </div>
               <p className='title'>{item.title}</p>

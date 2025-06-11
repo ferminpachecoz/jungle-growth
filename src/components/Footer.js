@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className='footer d-flex row'>
       <div className='col-lg-3 col-6 p-4'>
-        <img src="/logos/Logo-Simple-Blanco.png" alt="Logo Simple Blanco" />
+        <img src="/logos/Logo-Simple-Blanco.webp"  alt="Logo Simple Blanco" />
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
       </div>
       <div className='col-lg-3 col-6 p-4'>

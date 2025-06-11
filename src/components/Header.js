@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className='header row g-0'>
       <div className='col-lg-6 col-6'>
-        <img src="./logos/Logo-Simple-Blanco.png" alt="Logo Jungle Growth" />
+        <img  src="/logos/Logo-Simple-Blanco.webp" fetchPriority="high" alt="Logo Jungle Growth" />
       </div>
       <div className='burger-container col-6 d-flex justify-content-end align-items-center d-lg-none'>
         <i className="bi bi-list" onClick={()=>setDisplay(!display)}></i>

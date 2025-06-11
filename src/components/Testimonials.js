@@ -9,32 +9,32 @@ import "../styles/Testimonials.scss";
 const testimonios = [
   {
     nombre: 'Martina Ríos',
-    imagen: 'user-placeholder.png',
+    imagen: 'user-placeholder.webp',
     comentario:"Desde que arrancamos a trabajar con Orka logramos aumentar 6x el retorno de la inversión. Seguimos trabajando juntos para alcanzar objetivos cada vez mas ambiciosos.",
   },
   {
     nombre: 'E-commerce Pilar',
-    imagen: 'user-placeholder.png',
+    imagen: 'user-placeholder.webp',
     comentario:"Desde que arrancamos a trabajar con Orka logramos aumentar 6x el retorno de la inversión. Seguimos trabajando juntos para alcanzar objetivos cada vez mas ambiciosos.",
   },
   {
     nombre: 'Tomás F.',
-    imagen: 'user-placeholder.png',
+    imagen: 'user-placeholder.webp',
     comentario:"Desde que arrancamos a trabajar con Orka logramos aumentar 6x el retorno de la inversión. Seguimos trabajando juntos para alcanzar objetivos cada vez mas ambiciosos.",
   },
   {
     nombre: 'Laura S.',
-    imagen: 'user-placeholder.png',
+    imagen: 'user-placeholder.webp',
     comentario:"Desde que arrancamos a trabajar con Orka logramos aumentar 6x el retorno de la inversión. Seguimos trabajando juntos para alcanzar objetivos cada vez mas ambiciosos.",
   },
   {
     nombre: 'Maximiliano D.',
-    imagen: 'user-placeholder.png',
+    imagen: 'user-placeholder.webp',
     comentario:"Desde que arrancamos a trabajar con Orka logramos aumentar 6x el retorno de la inversión. Seguimos trabajando juntos para alcanzar objetivos cada vez mas ambiciosos.",
   },
   {
     nombre: 'Juan Carlos F.',
-    imagen: 'user-placeholder.png',
+    imagen: 'user-placeholder.webp',
     comentario:"Desde que arrancamos a trabajar con Orka logramos aumentar 6x el retorno de la inversión. Seguimos trabajando juntos para alcanzar objetivos cada vez mas ambiciosos.",
   },
 ];
@@ -83,6 +83,7 @@ export default function TestimonialSwiper() {
                   <div className="col-4">
                     <img
                       src={t.imagen}
+                      loading='lazy'
                       alt={t.nombre}
                       className="img-fluid rounded-circle"
                       style={{ width: '80px', objectFit: 'cover' }}

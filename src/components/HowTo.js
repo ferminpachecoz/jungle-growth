@@ -97,7 +97,7 @@ export default function HowTo() {
                 viewport={{ once: true, amount: 0.5 }}
                 whileHover="hover"
               >
-                <img src="mockup-phone.png" className='mockup-img' alt="Mockup phone" />
+                <img src="mockup-phone.webp" loading="lazy" className='mockup-img' alt="Mockup phone" />
               </motion.div>
             </div>
 
