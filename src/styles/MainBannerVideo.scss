@@ -1,0 +1,45 @@
+.main-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .banner-placeholder,
+  .banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.6s ease;
+    z-index: 0;
+  }
+
+  .banner-placeholder {
+    opacity: 1;
+  }
+
+  .banner-placeholder.hidden {
+    opacity: 0;
+  }
+
+  .banner-video {
+    opacity: 0;
+  }
+
+  .banner-video.visible {
+    opacity: 1;
+  }
+
+  .contenedor {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    padding: 2rem;
+    color: var(--blanco);
+    text-align: center;
+    top: 5%;
+    left: 5%;
+  }
+}

@@ -10,6 +10,7 @@ import SectionAnalytics from '../components/SectionAnalytics'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import {motion} from "framer-motion"
+import MainBannerVideo from '../components/MainBannerVideo'
 
 
 export default function Home() {
@@ -20,7 +21,8 @@ export default function Home() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <Header />
-      <MainBanner />
+      {/* <MainBanner /> */}
+      <MainBannerVideo />
       <FreeProposal />
       <Services />
       <HowTo />
