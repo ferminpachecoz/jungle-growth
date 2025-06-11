@@ -41,5 +41,13 @@
     text-align: center;
     top: 5%;
     left: 5%;
+    text-align: start;
+  }
+}
+@media (max-width: 450px){
+  .main-banner{
+    .contenedor{
+      padding: 0px;
+    }
   }
 }
