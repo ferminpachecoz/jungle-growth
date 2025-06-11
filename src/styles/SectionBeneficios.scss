@@ -29,3 +29,14 @@
     }
   }
 }
+@media (max-width: 450px){
+  .section-beneficios{
+    padding: 2em;
+    .contenedor{
+      padding: 2em;
+      .content{
+        padding: 0px;
+      }
+    }
+  }
+}

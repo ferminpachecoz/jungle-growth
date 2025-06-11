@@ -32,11 +32,11 @@ export default function SectionBeneficios() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.4 }}
     >
-      <div className='contenedor row justify-content-between'>
+      <div className='contenedor row justify-content-between '>
         {array.map((item, index) => (
           <motion.div
             key={index}
-            className='col'
+            className='col-12 col-lg mb-5'
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

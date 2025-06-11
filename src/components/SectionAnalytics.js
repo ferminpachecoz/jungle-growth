@@ -14,7 +14,7 @@ export default function SectionAnalytics() {
 
         {/* Columna de texto */}
         <motion.div
-          className="col-lg-4"
+          className="col-lg-4 col-12"
           initial={{ x: -30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -36,7 +36,7 @@ export default function SectionAnalytics() {
 
         {/* Imagen de laptop */}
         <motion.div
-          className="col-lg-8 image"
+          className="col-lg-8 col-12 image"
           initial={{ x: 30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}

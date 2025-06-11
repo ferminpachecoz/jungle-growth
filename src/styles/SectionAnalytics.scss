@@ -40,3 +40,22 @@
     }
   }
 }
+@media (max-width: 450px){
+  .section-analytics{
+    padding: 2em;
+    margin-bottom: 10em;
+    .contenedor{
+      padding: 4em 2em 4em 2em;
+      .image{
+        img{
+          top: -20px;
+          left: -15%;
+        }
+      }
+      .logo-container{
+        top: -45px;
+        left: 40%;
+      }
+    }
+  }
+}

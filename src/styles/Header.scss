@@ -22,3 +22,31 @@ header{
     }
   }
 }
+@media (max-width: 450px){
+  .header{
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.7); /* Capa negra con transparencia */
+    img{
+      width: 80px;
+    }
+    .navegador{
+      display: none;
+      a{
+        margin-bottom: 1em;
+      }
+      .button{
+        margin-bottom: 1em;
+        background-color: transparent;
+        padding: 0px;
+        font-weight: 400;
+        color: var(--amarillo);
+      }
+    }
+    .burger-container{
+      i{
+        color: var(--amarillo);
+        font-size: 30px;
+      }
+    }
+  }
+}

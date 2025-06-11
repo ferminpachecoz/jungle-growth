@@ -12,14 +12,14 @@ export default function FreeProposal() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <motion.div
-        className='big-card d-flex'
+        className='big-card d-flex flex-column flex-lg-row'
         initial={{ scale: 0.95, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true, amount: 0.5 }}
       >
         <motion.div
-          className='col-lg-5'
+          className='col-lg-5 col-12'
           initial={{ x: -30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -32,10 +32,10 @@ export default function FreeProposal() {
           </p>
         </motion.div>
 
-        <div className='col-lg-2'></div>
+        <div className='col-lg-2 d-none d-lg-block'></div>
 
         <motion.div
-          className='col-lg-5 d-flex justify-content-center align-items-center'
+          className='col-lg-5 col-12 d-flex justify-content-center align-items-center'
           initial={{ x: 30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}

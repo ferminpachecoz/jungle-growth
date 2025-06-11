@@ -5,7 +5,14 @@ export default function MainBanner() {
   return (
     <div className='main-banner'>
       <img src="/textures/pexels-tarcila.jpg" alt="Fondo con hojas" />
-      <h1>Descubre el <span>potencial</span> de tu marca en Amazon</h1>
+      <div className='contenedor d-flex flex-column justify-content-center'>
+        <h1>Descubre el <span>potencial</span> de tu marca en Amazon</h1>
+        <button 
+          className='d-block d-lg-none'
+        >
+          Empezar ya
+        </button>
+      </div>
     </div>
   )
 }

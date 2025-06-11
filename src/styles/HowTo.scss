@@ -87,3 +87,17 @@
   border-color: var(--verde-claro) !important;
   opacity: 0.2;
 }
+
+@media (max-width: 450px){
+  .section-bg{
+    .image{
+      height: 400px;
+      .mockup-cont{
+        right: 60px !important;
+        img{
+          width: 300px !important;
+        }
+      }
+    }
+  }
+}
