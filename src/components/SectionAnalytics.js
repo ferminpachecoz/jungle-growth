@@ -84,7 +84,7 @@ export default function SectionAnalytics() {
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <img src="/iconos/iconos-05.png" loading="lazy" alt="Icono Jungle Growth" />
+          <img src="/iconos/iconos-03.webp" loading="lazy" alt="Icono Jungle Growth" />
         </motion.span>
       </div>
     </motion.div>

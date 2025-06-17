@@ -18,27 +18,6 @@
     }
   }
 
-  .title-underline {
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--verde-claro), var(--lila));
-    margin: 0 auto;
-    border-radius: 2px;
-    position: relative;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 12px;
-      height: 8px;
-      background: var(--amarillo);
-      border-radius: 50%;
-    }
-  }
-
   .content-wrapper {
     position: relative;
     padding: 30px;
@@ -52,7 +31,7 @@
       position: absolute;
       width: 60px;
       height: 60px;
-      background: linear-gradient(45deg, var(--lila), var(--amarillo));
+      background: linear-gradient(45deg, var(--naranja), var(--amarillo));
       border-radius: 50%;
       opacity: 0.3;
       
@@ -128,7 +107,7 @@
       &.circle-1 {
         width: 80px;
         height: 80px;
-        background: var(--lila);
+        background: var(--naranja);
         top: 20px;
         right: 20px;
         opacity: 0.7;
@@ -199,7 +178,7 @@
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--verde-claro), var(--lila));
+      background: linear-gradient(135deg, var(--verde-claro), var(--amarillo));
       padding: 8px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -264,7 +243,7 @@
       &.element-1 {
         width: 200px;
         height: 200px;
-        background: var(--lila);
+        background: var(--naranja);
         top: 10%;
         left: 5%;
         animation: float 6s ease-in-out infinite;

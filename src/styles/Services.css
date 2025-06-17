@@ -116,7 +116,7 @@
 .service-icon {
   width: 4rem;
   height: 4rem;
-  background-color: #d199fa;
+  background-color: var(--amarillo);
   border-radius: 0.75rem;
 }
 
@@ -165,21 +165,21 @@
 }
 
 /* Botón CTA */
-.cta-button {
-  background-color: #ef5026;
+.services-section .cta-button {
+  background-color: var(--naranja);
   color: #eef4e9;
   border: none;
   transition: all 0.3s ease;
   box-shadow: 0 8px 24px rgba(239, 80, 38, 0.2);
 }
 
-.cta-button:hover {
+.services-section .cta-button:hover {
   background-color: #d63916;
   color: #eef4e9;
   box-shadow: 0 12px 32px rgba(239, 80, 38, 0.3);
 }
 
-.cta-button:focus {
+.services-section .cta-button:focus {
   background-color: #d63916;
   color: #eef4e9;
   box-shadow: 0 0 0 0.25rem rgba(239, 80, 38, 0.25);

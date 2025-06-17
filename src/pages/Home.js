@@ -1,6 +1,5 @@
 import Header from '../components/Header'
 import MainBanner from '../components/MainBanner'
-import FreeProposal from '../components/FreeProposal'
 import Services from '../components/Services'
 import HowTo from '../components/HowTo'
 import SecondaryBanner from '../components/SecondaryBanner'
@@ -13,6 +12,7 @@ import {motion} from "framer-motion"
 import MainBannerVideo from '../components/MainBannerVideo'
 import QuienesSomos from '../components/QuienesSomos'
 import ClientsSection from '../components/ClientSection'
+import AppointmentSection from '../components/AppointmentSection'
 
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
       <Header />
       {/* <MainBanner /> */}
       <MainBannerVideo />
-      <FreeProposal />
+      <AppointmentSection />
       <Services />
       <HowTo />
       <QuienesSomos />
