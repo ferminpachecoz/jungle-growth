@@ -8,8 +8,8 @@ export default function Contact() {
       className='contact'
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
-      viewport={{ once: true, amount: 0.4 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
@@ -27,7 +27,7 @@ export default function Contact() {
           alt="Imagen de fondo con hojas"
           initial={{ scale: 1.1, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true }}
         />
 
@@ -38,7 +38,7 @@ export default function Contact() {
             initial={{ x: -30, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <form>
               <motion.div
@@ -95,7 +95,7 @@ export default function Contact() {
             initial={{ x: 30, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <motion.img
               src="/iconos/iconos-10.webp"

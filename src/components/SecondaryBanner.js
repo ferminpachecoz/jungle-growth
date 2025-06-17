@@ -15,7 +15,7 @@ export default function SecondaryBanner() {
         className='col-lg-7 d-flex align-items-center'
         initial={{ x: -30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
       >
         <h1>Confiá tu estrategia digital en nosotros</h1>
@@ -25,7 +25,7 @@ export default function SecondaryBanner() {
         className='col-lg-5 image position-relative'
         initial={{ x: 30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
       >
         <motion.img
@@ -42,7 +42,7 @@ export default function SecondaryBanner() {
           className='logo-container'
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
         >
           <img src="/logos/Logo-Simple-Blanco.webp" alt="Logo Simple Blanco" />

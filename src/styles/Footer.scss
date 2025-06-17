@@ -2,24 +2,24 @@
   background-color: var(--verde-oscuro);
   padding: 4em 6em;
   p{
-    color: var(--amarillo);
+    color: var(--blanco);
   }
   h3{
-    color: var(--blanco);
+    color: var(--amarillo);
     margin-bottom: 1em;
   }
   .menu-rapido{
     display: flex;
     flex-direction: column;
     a{
-      color: var(--amarillo);
+      color: var(--blanco);
       margin-bottom: 12px;
     }
   }
   i{
     font-size: 40px;
     margin-right: 1em;
-    color: var(--amarillo);
+    color: var(--blanco);
   }
   img{
     width: 100px;

@@ -11,6 +11,8 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import {motion} from "framer-motion"
 import MainBannerVideo from '../components/MainBannerVideo'
+import QuienesSomos from '../components/QuienesSomos'
+import ClientsSection from '../components/ClientSection'
 
 
 export default function Home() {
@@ -26,6 +28,8 @@ export default function Home() {
       <FreeProposal />
       <Services />
       <HowTo />
+      <QuienesSomos />
+      <ClientsSection />
       <SecondaryBanner />
       <SectionBeneficios />
       <TestimonialSwiper />

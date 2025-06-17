@@ -1,0 +1,142 @@
+.father{
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.clients-section {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.clients-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.clients-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--verde-oscuro);
+  font-size: 40px;
+  
+  @media (max-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: calc(200px * 20 + 64px * 20); // 20 items total (10 duplicados)
+  
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.client-item {
+  flex-shrink: 0;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  
+  @media (max-width: 768px) {
+    margin: 0 1.5rem;
+    min-width: 150px;
+  }
+  
+  @media (max-width: 480px) {
+    margin: 0 1rem;
+    min-width: 120px;
+  }
+}
+
+.client-logo {
+  border-radius: 15px;
+  max-width: 160px;
+  height: 80px;
+  object-fit: contain;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+  
+  @media (max-width: 768px) {
+    max-width: 120px;
+    height: 60px;
+  }
+  
+  @media (max-width: 480px) {
+    max-width: 100px;
+    height: 50px;
+  }
+}
+
+// Animación del carrusel infinito
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// Variaciones de velocidad (opcional)
+.carousel-track {
+  &.slow {
+    animation-duration: 45s;
+  }
+  
+  &.fast {
+    animation-duration: 20s;
+  }
+}
+
+// Efectos adicionales
+.clients-section {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, #EEF4E9, transparent);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to left, #EEF4E9, transparent);
+    z-index: 1;
+    pointer-events: none;
+  }
+}

@@ -3,6 +3,7 @@ body{
   font-style: normal;
   position: relative;
   overflow-x: hidden;
+  background-color: var(--blanco);
 }
 :root{
   --verde-claro: #097333;

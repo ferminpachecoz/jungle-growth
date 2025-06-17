@@ -1,5 +1,6 @@
 .section-beneficios{
   padding: 4em;
+  background-color: var(--blanco);
   .contenedor{
     padding: 4em 2em;
     background-color: var(--verde-claro);
@@ -11,9 +12,12 @@
         display: flex;
         justify-content: center;
         .image{
-          background-color: white;
-          padding: 10px;
+          background-color: var(--lila);
+          padding: 15px;
           border-radius: 10000px;
+          img{
+            width: 60px;
+          }
         }
       }
       .title{

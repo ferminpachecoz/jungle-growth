@@ -1,0 +1,162 @@
+import { motion } from "framer-motion"
+import "../styles/QuienesSomos.scss"
+
+const QuienesSomos = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.3,
+      },
+    },
+  }
+
+  const itemVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  }
+
+  const circleVariants = {
+    hidden: { scale: 0, rotate: -180 },
+    visible: {
+      scale: 1,
+      rotate: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  }
+
+  return (
+    <section className="quienes-somos-section">
+      <div className="container">
+        <motion.div
+          className="row"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          {/* Título */}
+          <motion.div className="col-12 text-center mb-5" variants={itemVariants}>
+            <h2 className="section-title">Quienes Somos</h2>
+          </motion.div>
+
+          {/* Contenido principal */}
+          <div className="col-lg-6 col-md-12 mb-4">
+            <motion.div className="content-wrapper" variants={itemVariants}>
+              <div className="decorative-element top-left"></div>
+              <h3 className="content-subtitle">Expertos en Amazon Marketing</h3>
+              <p className="content-text">
+                En <strong>Jungle Growth</strong>, somos una agencia especializada en potenciar tu presencia en Amazon.
+                Con años de experiencia en el ecosistema de e-commerce, ayudamos a marcas y vendedores a maximizar sus
+                ventas y visibilidad en la plataforma más grande del mundo.
+              </p>
+              <p className="content-text">
+                Nuestro enfoque se basa en estrategias data-driven, optimización continua y un profundo conocimiento de
+                los algoritmos de Amazon para garantizar resultados excepcionales para nuestros clientes.
+              </p>
+
+              {/* Elementos visuales decorativos */}
+              <div className="stats-container">
+                <motion.div className="stat-item" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+                  <span className="stat-number">500+</span>
+                  <span className="stat-label">Productos Optimizados</span>
+                </motion.div>
+                <motion.div className="stat-item" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+                  <span className="stat-number">95%</span>
+                  <span className="stat-label">Tasa de Éxito</span>
+                </motion.div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Imagen representativa */}
+          <div className="col-lg-6 col-md-12 mb-4">
+            <motion.div className="image-wrapper" variants={itemVariants}>
+              <div className="decorative-circle circle-1"></div>
+              <div className="decorative-circle circle-2"></div>
+              <img
+                src="/textures/pexels-aditya-aiyar.jpg"
+                alt="Jungle Growth - Amazon Marketing Agency"
+                className="main-image"
+              />
+              <div className="image-overlay">
+                <div className="overlay-content">
+                  <span className="overlay-text">Crecimiento Garantizado</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Socios */}
+          <motion.div className="col-12 mt-5" variants={itemVariants}>
+            <h4 className="founders-title">Nuestros Fundadores</h4>
+            <div className="founders-container">
+              <motion.div
+                className="founder-circle"
+                variants={circleVariants}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0 20px 40px rgba(3, 50, 32, 0.3)",
+                }}
+                transition={{ duration: 0.3 }}
+              >
+                <img
+                  src="user-placeholder.webp"
+                  alt="Socio 1 - Jungle Growth"
+                  className="founder-image"
+                />
+                <div className="founder-info">
+                  <h5 className="founder-name">Segundo Blaksley</h5>
+                  <p className="founder-role">CEO & Amazon Strategist</p>
+                </div>
+                <div className="founder-decoration"></div>
+              </motion.div>
+
+              <motion.div
+                className="founder-circle"
+                variants={circleVariants}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0 20px 40px rgba(3, 50, 32, 0.3)",
+                }}
+                transition={{ duration: 0.3 }}
+              >
+                <img
+                  src="user-placeholder.webp"
+                  alt="Socio 2 - Jungle Growth"
+                  className="founder-image"
+                />
+                <div className="founder-info">
+                  <h5 className="founder-name">Nicolás Blaksley</h5>
+                  <p className="founder-role">CTO & Data Analyst</p>
+                </div>
+                <div className="founder-decoration"></div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* Elementos decorativos de fondo */}
+      <div className="background-elements">
+        <div className="bg-element element-1"></div>
+        <div className="bg-element element-2"></div>
+        <div className="bg-element element-3"></div>
+      </div>
+    </section>
+  )
+}
+
+export default QuienesSomos

@@ -5,19 +5,19 @@ import { motion } from 'framer-motion'
 export default function SectionBeneficios() {
   const array = [
     {
-      icon: "/iconos/creativity.webp",
+      icon: "/iconos/idea.png",
       title: "Lorem ipsum",
       description:
         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
     },
     {
-      icon: "/iconos/creativity.webp",
+      icon: "/iconos/idea.png",
       title: "Lorem ipsum",
       description:
         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",
     },
     {
-      icon: "/iconos/creativity.webp",
+      icon: "/iconos/idea.png",
       title: "Lorem ipsum",
       description:
         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.",

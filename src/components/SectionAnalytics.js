@@ -1,7 +1,20 @@
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import "../styles/SectionAnalytics.scss"
 
 export default function SectionAnalytics() {
+  const [showMore, setShowMore] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 450)
+    }
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
   return (
     <motion.div
       className="section-analytics"
@@ -28,10 +41,21 @@ export default function SectionAnalytics() {
             ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
             consequat.
           </p>
-          <p>
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-            molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-          </p>
+
+          {(!isMobile || showMore) && (
+            <p>
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+              molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+            </p>
+          )}
+
+          {isMobile && !showMore && (
+            <div className='d-flex justify-content-center'>
+              <button className="btn-mostrar-mas" onClick={() => setShowMore(true)}>
+                Mostrar más
+              </button>
+            </div>
+          )}
         </motion.div>
 
         {/* Imagen de laptop */}
@@ -60,7 +84,7 @@ export default function SectionAnalytics() {
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <img src="/iconos/iconos-03.webp" loading="lazy" alt="Icono Jungle Growth" />
+          <img src="/iconos/iconos-05.png" loading="lazy" alt="Icono Jungle Growth" />
         </motion.span>
       </div>
     </motion.div>

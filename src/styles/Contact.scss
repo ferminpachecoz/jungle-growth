@@ -21,9 +21,10 @@
       top: 0px;
       left: 0px;
       width: 100vw;
+      height: 120vh;
       padding: 8em 10em;
       .logo-jg{
-        width: 400px;
+        width: 300px;
         margin-left: 6em;
       }
       form{
@@ -43,7 +44,7 @@
           border-radius: 15px;
           background-color: var(--amarillo);
           color: var(--verde-oscuro);
-          font-weight: 500;
+          font-weight: 700;
           font-size: 20px;
         }
       }
@@ -54,10 +55,11 @@
   .contact{
     .wrapp{
       .fondo-jg{
-        height: 133vh;
+        height: 100vh;
       }
       .contenedor{
         padding: 3em 2em;
+        height: 100vh;
       }
     }
   }

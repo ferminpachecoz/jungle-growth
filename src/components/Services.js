@@ -99,7 +99,7 @@ export default function Services() {
           className="text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.5 }}
         >
           <motion.button

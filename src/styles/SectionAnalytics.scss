@@ -38,6 +38,23 @@
         height: auto;
       }
     }
+    .btn-mostrar-mas {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      background-color: transparent;
+      border: 1px solid #097333;
+      color: #097333;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      &:hover {
+        background-color: #097333;
+        color: white;
+      }
+    }
   }
 }
 @media (max-width: 450px){
