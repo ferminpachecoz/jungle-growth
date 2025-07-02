@@ -47,7 +47,7 @@ export default function TestimonialSwiper() {
     >
       <div className="container">
         <h1 className="text-center">
-          Nuestros resultados hablan por sí solos
+          Nuestros <span style={{color: "var(--naranja)"}}>resultados</span> hablan por sí solos
         </h1>
 
         <Swiper

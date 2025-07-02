@@ -1,5 +1,5 @@
 header{
-  padding: 2em 6em;
+  padding: 1.5em 6em;
   position: absolute;
   top: 0px;
   width: 100%;
@@ -12,7 +12,8 @@ header{
   .navegador{
     a{
       color: var(--amarillo);
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: 500;
     }
     .button{
       color: var(--verde-oscuro);

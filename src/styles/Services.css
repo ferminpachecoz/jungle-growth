@@ -185,6 +185,7 @@
   box-shadow: 0 0 0 0.25rem rgba(239, 80, 38, 0.25);
 }
 
+
 /* Responsive adjustments */
 @media (max-width: 991px) {
   .services-section {
@@ -214,5 +215,52 @@
   .service-card-wrapper {
     width: 100% !important;
     max-width: 22rem;
+  }
+}
+
+.background-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+.background-elements .bg-element{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+.background-elements .element-1{
+  width: 200px;
+  height: 200px;
+  background: var(--naranja);
+  top: 10%;
+  left: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+.background-elements .element-2{
+  width: 150px;
+  height: 150px;
+  background: var(--amarillo);
+  top: 20%;
+  right: 10%;
+  animation: float 8s ease-in-out infinite reverse;
+}
+.background-elements .element-3{
+  width: 100px;
+  height: 100px;
+  background: var(--naranja);
+  bottom: 20%;
+  left: 15%;
+  animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }

@@ -16,7 +16,9 @@ export default function Header() {
         <a href="#">About Us</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
-        <a href="#" className='button'>Contactanos</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Analytics</a>
+        {/* <a href="#" className='button'>Contactanos</a> */}
       </div>
     </header>
   )

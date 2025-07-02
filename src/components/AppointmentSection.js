@@ -84,6 +84,7 @@ const AppointmentSection = () => {
             }}
             transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY, delay: 0.5 }}
           />
+          
         </motion.div>
       </div>
     </section>

@@ -8,6 +8,16 @@ export default function MainBannerVideo() {
   const [videoReady, setVideoReady] = useState(false)
   const [index, setIndex] = useState(0)
 
+  const handleScheduleClick = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/ferminpacheco87/30min?hide_event_type_details=0&hide_gdpr_banner=0',
+      });
+    } else {
+      console.warn("Calendly script not loaded yet.");
+    }
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prev => (prev + 1) % words.length)
@@ -59,8 +69,21 @@ export default function MainBannerVideo() {
           </AnimatePresence>{" "}
           de tu marca en Amazon
         </h1>
+        {/* Boton Viejo */}
+        {/* <button className="d-block d-lg-none">Empezar ya</button> */}
+        {/* Botón nuevo */}
+        <motion.button
+          className="cta-banner"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={handleScheduleClick}
+        >
+          Agendar Consulta Gratuita
+        </motion.button>
         <img src="/iconos/amazon-partner.webp" alt="Amazon partner logo" className='amazon-partner' />
-        <button className="d-block d-lg-none">Empezar ya</button>
       </div>
     </div>
   )

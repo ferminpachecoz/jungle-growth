@@ -18,7 +18,9 @@ export default function SecondaryBanner() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <h1>Confiá tu estrategia digital en nosotros</h1>
+        <h1>
+          Confiá tu <span style={{color: "var(--naranja)"}}>estrategia digital</span> en nosotros
+        </h1>
       </motion.div>
 
       <motion.div
@@ -48,6 +50,12 @@ export default function SecondaryBanner() {
           <img src="/logos/Logo-Simple-Blanco.webp" alt="Logo Simple Blanco" />
         </motion.span>
       </motion.div>
+      {/* Elementos decorativos de fondo */}
+      <div className="background-elements">
+        <div className="bg-element element-1"></div>
+        <div className="bg-element element-2"></div>
+        <div className="bg-element element-3"></div>
+      </div>
     </motion.div>
   )
 }

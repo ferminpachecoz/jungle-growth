@@ -20,7 +20,9 @@ const ClientsSection = () => {
       <section className="clients-section">
         <div className="clients-container">
           {/* Título atrapante */}
-          <h2 className="clients-title">Tecnologías que utilizamos</h2>
+          <h2 className="clients-title">
+            <span style={{color: "var(--naranja)"}}>Tecnologías</span> que utilizamos
+          </h2>
 
           {/* Carrusel infinito */}
           <div className="carousel-wrapper">

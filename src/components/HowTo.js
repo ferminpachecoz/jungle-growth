@@ -80,7 +80,9 @@ export default function HowTo() {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="display-4 fw-bold title-color mb-5">¿Cómo lo hacemos?</h2>
+            <h2 className="display-4 fw-bold title-color mb-5">
+              ¿<span style={{color: "var(--naranja)"}}>Cómo</span> lo hacemos?
+            </h2>
           </motion.div>
 
           {/* Contenido principal en una fila con dos columnas */}

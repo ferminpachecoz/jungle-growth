@@ -27,6 +27,14 @@ const services = [
 ]
 
 export default function Services() {
+
+  const scrollToContact = () => {
+    const contact = document.getElementById("contact")
+    if (contact) {
+      contact.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section className="services-section position-relative overflow-hidden">
       {/* Fondo degradado */}
@@ -49,7 +57,9 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <h2 className="services-title display-1 fw-bold mb-4 lh-sm">Lo que podemos hacer por vos</h2>
+          <h2 className="services-title display-1 fw-bold mb-4 lh-sm">
+            Lo que <span style={{color: "var(--naranja)"}}>podemos</span> hacer por vos
+          </h2>
         </motion.div>
 
         {/* Grid de servicios */}
@@ -104,6 +114,7 @@ export default function Services() {
         >
           <motion.button
             className="cta-button btn btn-lg px-5 py-3 fw-semibold rounded-pill"
+            onClick={scrollToContact}
             whileHover={{
               scale: 1.05,
               boxShadow: "0 20px 40px rgba(239, 80, 38, 0.3)",
@@ -113,6 +124,13 @@ export default function Services() {
             Empezar ahora
           </motion.button>
         </motion.div>
+      </div>
+
+      {/* Elementos decorativos de fondo */}
+      <div className="background-elements">
+        <div className="bg-element element-1"></div>
+        <div className="bg-element element-2"></div>
+        <div className="bg-element element-3"></div>
       </div>
     </section>
   )

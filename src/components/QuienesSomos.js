@@ -87,7 +87,7 @@ const QuienesSomos = () => {
               <div className="decorative-circle circle-1"></div>
               <div className="decorative-circle circle-2"></div>
               <img
-                src="/textures/pexels-aditya-aiyar.jpg"
+                src="metricas.jpeg"
                 alt="Jungle Growth - Amazon Marketing Agency"
                 className="main-image"
               />
