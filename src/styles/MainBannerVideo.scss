@@ -49,7 +49,6 @@
     left: 5%;
     text-align: start;
     .amazon-partner{
-      margin: 10px auto 0px auto;
       width: 100px;
     }
   }
@@ -58,6 +57,8 @@
   .main-banner{
     .contenedor{
       padding: 0px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

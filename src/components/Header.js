@@ -6,7 +6,7 @@ export default function Header() {
   
   return (
     <header className='header row g-0'>
-      <div className='col-lg-6 col-6'>
+      <div className='col-lg-6 col-6 d-flex justify-content-start align-items-center'>
         <img  src="/logos/logo-amarillo.webp" fetchPriority="high" alt="Logo Jungle Growth" />
       </div>
       <div className='burger-container col-6 d-flex justify-content-end align-items-center d-lg-none'>
@@ -18,7 +18,9 @@ export default function Header() {
         <a href="#">Clients</a>
         <a href="#">Testimonials</a>
         <a href="#">Analytics</a>
-        {/* <a href="#" className='button'>Contactanos</a> */}
+        {/*
+          <a href="#" className='button'>Contactanos</a>
+         */}
       </div>
     </header>
   )

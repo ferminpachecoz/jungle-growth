@@ -91,6 +91,7 @@
 .service-card-wrapper {
   width: 20rem;
   transition: all 0.3s ease;
+  z-index: 1000000;
 }
 
 @media (min-width: 992px) {

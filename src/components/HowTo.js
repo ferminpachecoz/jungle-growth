@@ -16,7 +16,7 @@ export default function HowTo() {
       number: "02",
       title: "Optimización de Listing",
       description:
-        "Optimizamos títulos, descripciones, palabras clave y imágenes para mejorar tu ranking y conversiones.",
+        "Optimizamos títulos, descripciones, palabras clave y imágenes para mejorar tu ranking y conversiones. Optimizamos títulos, descripciones.",
       icon: TrendingUp,
     },
     {

@@ -70,19 +70,21 @@ export default function MainBannerVideo() {
           de tu marca en Amazon
         </h1>
         {/* Boton Viejo */}
-        {/* <button className="d-block d-lg-none">Empezar ya</button> */}
+        <button className="d-block d-lg-none">Empezar ya</button>
         {/* Botón nuevo */}
-        <motion.button
-          className="cta-banner"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={handleScheduleClick}
-        >
-          Agendar Consulta Gratuita
-        </motion.button>
+        {/*
+          <motion.button
+            className="cta-banner"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={handleScheduleClick}
+          >
+            Agendar Consulta Gratuita
+          </motion.button>
+        */}
         <img src="/iconos/amazon-partner.webp" alt="Amazon partner logo" className='amazon-partner' />
       </div>
     </div>
