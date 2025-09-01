@@ -27,25 +27,20 @@ export default function SectionAnalytics() {
 
         {/* Columna de texto */}
         <motion.div
-          className="col-lg-4 col-12"
+          className="col-lg-5 col-12"
           initial={{ x: -30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <h3>Lorem ipsum dolor</h3>
+          <h3>Datos que impulsan tu crecimiento en Amazon</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat.
+            Tu crecimiento no depende de la suerte, sino de los datos. Medimos métricas como <strong>ventas, tráfico, ACOS, TACOS, conversión y volumen de búsqueda</strong>  por palabras clave. Con estrategias publicitarias <b>impulsamos</b> ventas, visibilidad y mejoramos el posicionamiento orgánico de tus productos. 
           </p>
 
           {(!isMobile || showMore) && (
             <p>
-              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-              molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+              Con el entendimiento del algoritmo, <b>nuestra experiencia</b> en análisis de datos y una <b>visión estratégica</b> clara, logramos posicionar tus productos por encima de la competencia.
             </p>
           )}
 
@@ -60,7 +55,7 @@ export default function SectionAnalytics() {
 
         {/* Imagen de laptop */}
         <motion.div
-          className="col-lg-8 col-12 image"
+          className="col-lg-7 col-12 image"
           initial={{ x: 30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}

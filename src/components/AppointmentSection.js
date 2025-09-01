@@ -31,10 +31,10 @@ const AppointmentSection = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="cta-title">
-                  ¿Listo para <span className="highlight">dominar</span> Amazon?
+                  ¿Sabías que <span className="highlight">4 de cada 10</span> compras online ocurren en Amazon?
                 </h2>
                 <p className="cta-subtitle">
-                  Descubre cómo aumentar tus ventas un 300% en los próximos 90 días con nuestras estrategias probadas
+                  Descubre cómo maximizar tus resultados y dominar esta jungla digital.
                 </p>
               </motion.div>
             </div>

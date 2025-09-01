@@ -13,9 +13,33 @@ import MainBannerVideo from '../components/MainBannerVideo'
 import QuienesSomos from '../components/QuienesSomos'
 import ClientsSection from '../components/ClientSection'
 import AppointmentSection from '../components/AppointmentSection'
+import Segmento from '../components/Segmento'
+import CuadroComparativo from '../components/CuadroComparativo'
+import Estadisticas from '../components/Estadisticas'
+import { TrendingUp, Search, BarChart3 } from "lucide-react"
 
 
 export default function Home() {
+  const services = [
+    {
+      icon: TrendingUp,
+      title: "Socios de Confianza",
+      description:
+        " Construimos relaciones a largo plazo, convirtiéndonos en un aliado estratégico para tu negocio en Amazon.",
+    },
+    {
+      icon: Search,
+      title: "Servicio Limitado",
+      description:
+        "Priorizamos la calidad, gestionando un número limitado de cuentas para asegurar máxima dedicación en cada proyecto.",
+    },
+    {
+      icon: BarChart3,
+      title: "Innovación Continua",
+      description:
+        "Estamos siempre un paso adelante, aplicando inteligencia artificial y nuevas tecnologías para optimizar campañas en tiempo real y adaptarnos a los cambios del marketplace.",
+    },
+  ]
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -24,15 +48,14 @@ export default function Home() {
     >
       <Header />
       {/* <MainBanner /> */}
-      <MainBannerVideo />
+      <MainBannerVideo video="video-banner.mp4" />
       <AppointmentSection />
-      <Services />
-      <HowTo />
+      <Segmento />
       <QuienesSomos />
       <ClientsSection />
-      <SecondaryBanner />
-      <SectionBeneficios />
-      <TestimonialSwiper />
+      <CuadroComparativo />
+      <Estadisticas />
+      <Services array={services} title="¿Qué <span class='highlight'>Ofrecemos</span>?" />
       <SectionAnalytics />
       <Contact />
       <Footer />

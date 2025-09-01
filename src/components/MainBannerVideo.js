@@ -4,7 +4,7 @@ import "../styles/MainBannerVideo.scss"
 
 const words = ["potencial", "impacto", "alcance"]
 
-export default function MainBannerVideo() {
+export default function MainBannerVideo({video, title}) {
   const [videoReady, setVideoReady] = useState(false)
   const [index, setIndex] = useState(0)
 
@@ -40,7 +40,7 @@ export default function MainBannerVideo() {
       {/* Video de fondo */}
       <video
         className={`banner-video ${videoReady ? 'visible' : ''}`}
-        src="video-banner.mp4"
+        src={video}
         autoPlay
         muted
         loop
@@ -53,6 +53,9 @@ export default function MainBannerVideo() {
 
       {/* Contenido del banner */}
       <div className="contenedor d-flex flex-column justify-content-center">
+        {title?
+        <h1 dangerouslySetInnerHTML={{__html: title}}></h1>
+        :
         <h1>
           Descubre el{" "}
           <AnimatePresence mode="wait">
@@ -69,6 +72,7 @@ export default function MainBannerVideo() {
           </AnimatePresence>{" "}
           de tu marca en Amazon
         </h1>
+        }
         {/* Boton Viejo */}
         <button className="d-block d-lg-none">Empezar ya</button>
         {/* Botón nuevo */}

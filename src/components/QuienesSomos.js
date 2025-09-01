@@ -56,26 +56,23 @@ const QuienesSomos = () => {
           <div className="col-lg-6 col-md-12 mb-4">
             <motion.div className="content-wrapper" variants={itemVariants}>
               <div className="decorative-element top-left"></div>
-              <h3 className="content-subtitle">Expertos en Amazon Marketing</h3>
+              <h3 className="content-subtitle">Especialistas en el ecosistema de Amazon Marketplace</h3>
               <p className="content-text">
-                En <strong>Jungle Growth</strong>, somos una agencia especializada en potenciar tu presencia en Amazon.
-                Con años de experiencia en el ecosistema de e-commerce, ayudamos a marcas y vendedores a maximizar sus
-                ventas y visibilidad en la plataforma más grande del mundo.
+                En <strong>Jungle Growth</strong> somos una agencia especializada en <strong>potenciar</strong> tu presencia en Amazon. Con <strong>amplia experiencia</strong> en el ecosistema de e-commerce, nos convertimos en tu socio estratégico para <strong>maximizar</strong> ventas y visibilidad en la plataforma más grande del mundo.
               </p>
               <p className="content-text">
-                Nuestro enfoque se basa en estrategias data-driven, optimización continua y un profundo conocimiento de
-                los algoritmos de Amazon para garantizar resultados excepcionales para nuestros clientes.
+                Nuestro enfoque combina estrategias basadas en datos, <strong>optimización constante</strong> y un profundo entendimiento de los algoritmos de Amazon, garantizando <strong>resultados excepcionales</strong> y un crecimiento sostenido para nuestros clientes.
               </p>
 
               {/* Elementos visuales decorativos */}
               <div className="stats-container">
                 <motion.div className="stat-item" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
-                  <span className="stat-number">500+</span>
+                  <span className="stat-number">1000+</span>
                   <span className="stat-label">Productos Optimizados</span>
                 </motion.div>
                 <motion.div className="stat-item" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
-                  <span className="stat-number">95%</span>
-                  <span className="stat-label">Tasa de Éxito</span>
+                  <span className="stat-number">1500+</span>
+                  <span className="stat-label">Campañas Creadas</span>
                 </motion.div>
               </div>
             </motion.div>

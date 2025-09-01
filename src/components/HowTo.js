@@ -7,23 +7,30 @@ export default function HowTo() {
   const steps = [
     {
       number: "01",
-      title: "Análisis y Estrategia",
+      title: "Descubrimiento",
       description:
-        "Evaluamos tu producto y competencia para crear una estrategia personalizada que maximice tu visibilidad en Amazon.",
+        "Conocemos tu marca y competencia, analizamos oportunidades y trazamos un plan estratégico alineado a tus objetivos.",
       icon: Target,
     },
     {
       number: "02",
-      title: "Optimización de Listing",
+      title: "Preparación Estratégica del Lanzamiento",
       description:
-        "Optimizamos títulos, descripciones, palabras clave y imágenes para mejorar tu ranking y conversiones. Optimizamos títulos, descripciones.",
+        "Diseñamos estrategias personalizadas, optimizamos listados y campañas, y generamos alto tráfico para maximizar conversiones en lanzamientos o relanzamientos.",
       icon: TrendingUp,
     },
     {
       number: "03",
-      title: "Gestión de Campañas",
+      title: "Lanzamiento",
       description:
-        "Creamos y gestionamos campañas publicitarias efectivas para aumentar tus ventas y ROI de manera sostenible.",
+        "Lanzamos productos con campañas estratégicas, segmentación y keywords relevantes, generando tráfico masivo, posicionamiento en Amazon y crecimiento rentable sostenido.",
+      icon: CheckCircle,
+    },
+    {
+      number: "04",
+      title: "Seguimiento y Optimización",
+      description:
+        "Seguimos y optimizamos campañas diariamente, ajustando estrategias y métricas clave para maximizar rentabilidad y lograr crecimiento sostenible en Amazon.",
       icon: CheckCircle,
     },
   ]
