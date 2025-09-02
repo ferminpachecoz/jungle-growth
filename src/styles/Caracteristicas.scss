@@ -1,0 +1,187 @@
+.caracteristicas-premium-section {
+  background: var(--verde-oscuro);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5em;
+  // Elementos decorativos de fondo
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+      radial-gradient(circle at 25% 25%, rgba(209, 153, 250, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(221, 237, 89, 0.03) 0%, transparent 50%);
+    animation: float 20s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -30px) rotate(1deg); }
+    66% { transform: translate(-20px, 20px) rotate(-1deg); }
+  }
+
+  .caracteristica-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(239, 80, 38, 0.3);
+      box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(239, 80, 38, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+      .card-decoration {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+
+      .shine-effect {
+        transform: translateX(100%);
+      }
+    }
+
+    // Efecto de brillo que se mueve
+    .shine-effect {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+      );
+      transition: transform 0.6s ease;
+      pointer-events: none;
+    }
+
+    // Elemento decorativo
+    .card-decoration {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--naranja), var(--amarillo));
+      border-radius: 50%;
+      opacity: 0.1;
+      transition: all 0.4s ease;
+      pointer-events: none;
+    }
+  }
+
+  .caracteristica-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--naranja), #d63d1a);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 
+      0 10px 30px rgba(239, 80, 38, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .icon {
+      font-size: 2rem;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    }
+
+    @media (max-width: 768px) {
+      width: 70px;
+      height: 70px;
+      
+      .icon {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .caracteristica-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .caracteristica-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--blanco);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .caracteristica-descripcion {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(238, 244, 233, 0.9);
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 991px) {
+    padding: 4rem 0;
+
+    .caracteristica-card {
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 3rem 0;
+
+    .caracteristica-card {
+      padding: 1.5rem 1rem;
+    }
+  }
+}
+
+// Variables CSS (si no las tienes ya definidas)
+:root {
+  --verde-claro: #097333;
+  --verde-oscuro: #033220;
+  --lila: #D199FA;
+  --naranja: #EF5026;
+  --amarillo: #DDED59;
+  --blanco: #EEF4E9;
+}

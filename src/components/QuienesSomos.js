@@ -81,10 +81,8 @@ const QuienesSomos = () => {
           {/* Imagen representativa */}
           <div className="col-lg-6 col-md-12 mb-4">
             <motion.div className="image-wrapper" variants={itemVariants}>
-              <div className="decorative-circle circle-1"></div>
-              <div className="decorative-circle circle-2"></div>
               <img
-                src="metricas.jpeg"
+                src="/imagen-stats.jpg"
                 alt="Jungle Growth - Amazon Marketing Agency"
                 className="main-image"
               />
