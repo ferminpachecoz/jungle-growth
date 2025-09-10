@@ -40,7 +40,7 @@ const Segmento = () => {
           </h1>
         </motion.div>
 
-        <div className="row g-4">
+        <div className="row g-5">
           {/* Card 1 - Potencia tu negocio */}
           <div className="col-lg-6">
             <motion.div
