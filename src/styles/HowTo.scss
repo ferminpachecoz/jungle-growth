@@ -9,7 +9,7 @@
 }
 .section-bg{
   .image{
-    background-image: url("../../public/textures/pexels-roman-odintsov.webp");
+    /* background-image: url("../../public/textures/pexels-roman-odintsov.webp"); */
     background-size: cover;
     height: 700px;
     border-radius: 20px;
@@ -19,7 +19,7 @@
       bottom: 10px;
       right: 150px;
       .mockup-img{
-        width: 370px;
+        width: 110%;
         height: auto;
         z-index: 10000;
       }

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import "../styles/Caracteristicas.scss"
 
-const Caracteristicas = ({caracteristicas}) => {
+const Caracteristicas = ({caracteristicas, title}) => {
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -27,6 +27,9 @@ const Caracteristicas = ({caracteristicas}) => {
 
   return (
     <section className="caracteristicas-premium-section">
+      {title &&
+        <h2 dangerouslySetInnerHTML={{__html: title}}></h2>
+      }
       <div className="container">
         <motion.div
           className="row g-4"

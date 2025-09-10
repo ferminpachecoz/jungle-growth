@@ -89,7 +89,10 @@ export default function MainBannerVideo({video, title}) {
             Agendar Consulta Gratuita
           </motion.button>
         */}
-        <img src="/iconos/amazon-partner.webp" alt="Amazon partner logo" className='amazon-partner' />
+        <div className='iconos-contenedor'>
+          <img src="/iconos/amazon-partner.webp" alt="Amazon partner logo" className='amazon-partner' />
+          <img src="/iconos/Meta-Business-Partner-Badge-Webtopia.webp" alt="Meta partner logo" className='amazon-partner' />
+        </div>
       </div>
     </div>
   )

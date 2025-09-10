@@ -8,6 +8,7 @@ import HowTo from '../components/HowTo'
 import PreguntasIdentificacion from '../components/PreguntasIdentificacion'
 import Caracteristicas from '../components/Caracteristicas'
 import Contact from '../components/Contact'
+import { Helmet } from 'react-helmet';
 
 export default function Beginner() {
   let array=[
@@ -79,7 +80,7 @@ export default function Beginner() {
         "Desde el inicio se asignará un equipo de 4 especialistas en las diferentes áreas, con dedicación full focus en escalar tu negocio.",
     },
     {
-      icon: "💎",
+      icon: "♾️",
       titulo: "Servicio Premium",
       descripcion:
         "Priorizamos la calidad de nuestros servicios, por ello no gestionamos más de 30 marcas para asegurar la máxima dedicación.",
@@ -87,6 +88,22 @@ export default function Beginner() {
   ]
   return (
     <>
+
+      {/* Head */}
+      <title>Avanzado | Mi Proyecto</title>
+      <meta
+        name="description"
+        content="Aprende conceptos avanzados, estrategias de lanzamiento y optimización para escalar tu negocio en Amazon."
+      />
+      <meta property="og:title" content="Avanzado | Mi Proyecto" />
+      <meta
+        property="og:description"
+        content="Aprende conceptos avanzados, estrategias de lanzamiento y optimización para escalar tu negocio en Amazon."
+      />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      {/* Head */}
+
       <Header />
       <MainBannerVideo video="video-banner-2.mp4" title="El <span class='highlight'>futuro de tu marca</span> comienza en Amazon" />
       <Services 

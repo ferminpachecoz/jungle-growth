@@ -8,6 +8,7 @@ import HowTo from '../components/HowTo'
 import PreguntasIdentificacion from '../components/PreguntasIdentificacion'
 import Caracteristicas from '../components/Caracteristicas'
 import Contact from '../components/Contact'
+import { Helmet } from 'react-helmet';
 
 export default function Advanced() {
   let array=[
@@ -79,7 +80,7 @@ export default function Advanced() {
         "Asignamos un equipo de especialistas en marketing, data y creatividad que trabajan en conjunto para potenciar tu marca.",
     },
     {
-      icon: "💎",
+      icon: "♾️",
       titulo: "Crecimiento Escalable",
       descripcion:
         "Diseñamos un plan a medida que te permite crecer de manera rentable y sostenible dentro de Amazon.",
@@ -87,6 +88,9 @@ export default function Advanced() {
   ]
   return (
     <>
+      <Helmet>
+        <title>Avanzado | Mi Proyecto</title>
+      </Helmet>
       <Header />
       <MainBannerVideo 
         video="/video-banner-3.mp4" 

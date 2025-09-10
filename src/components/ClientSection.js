@@ -3,13 +3,13 @@ import "../styles/ClientSection.scss"
 const ClientsSection = () => {
   // Array de clientes con logos placeholder
   const clients = [
-    { id: 1, name: "SellerBoard", logo: "/logos/sellerboard.jpg" },
-    { id: 2, name: "Helium 10", logo: "/logos/helium10.png" },
-    { id: 3, name: "AddBrew", logo: "/logos/addbrew.png" },
-    { id: 4, name: "Teika Metrics", logo: "/logos/teikametrics.png" },
-    { id: 5, name: "Zon Guru", logo: "/logos/zonguru.png" },
-    { id: 6, name: "Slack", logo: "/logos/slack.png" },
-    { id: 7, name: "Notion", logo: "/logos/notion.png" },
+    { id: 1, name: "SellerBoard", logo: "/logos/sellerboard.webp" },
+    { id: 2, name: "Helium 10", logo: "/logos/helium10.webp" },
+    { id: 3, name: "AddBrew", logo: "/logos/addbrew.webp" },
+    { id: 4, name: "Teika Metrics", logo: "/logos/teikametrics.webp" },
+    { id: 5, name: "Zon Guru", logo: "/logos/zonguru.webp" },
+    { id: 6, name: "Slack", logo: "/logos/slack.webp" },
+    { id: 7, name: "Notion", logo: "/logos/notion.webp" },
   ]
 
   // Duplicamos el array para crear el efecto infinito

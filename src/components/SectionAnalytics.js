@@ -23,7 +23,7 @@ export default function SectionAnalytics() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.4 }}
     >
-      <div className="contenedor d-flex flex-wrap align-items-center justify-content-between">
+      <div className="contenedor d-flex flex-wrap align-items-center justify-content-between" id='analytics'>
 
         {/* Columna de texto */}
         <motion.div

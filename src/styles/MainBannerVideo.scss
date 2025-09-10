@@ -48,8 +48,18 @@
     top: 5%;
     left: 5%;
     text-align: start;
-    .amazon-partner{
-      width: 100px;
+    
+  }
+
+  .iconos-contenedor{
+    display: flex;
+    height: 70px;
+    margin-top: 20px;
+    img{
+      height: 100%;
+      width: auto;
+      margin-right: 1em;
+      border-radius: 15px;
     }
   }
 }

@@ -26,7 +26,7 @@ const Segmento = () => {
   }
 
   return (
-    <section className="segmento-section">
+    <section className="segmento-section" id="services">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -54,7 +54,7 @@ const Segmento = () => {
             >
               <div className="card-header">
                 <motion.div className="card-icon" variants={iconVariants} whileHover="hover">
-                  <img src="/enhance.png" alt="Potencia tu negocio" className="icon-image" />
+                  <img src="/enhance.webp" alt="Potencia tu negocio" className="icon-image" />
                 </motion.div>
               </div>
 
@@ -104,7 +104,7 @@ const Segmento = () => {
             >
               <div className="card-header">
                 <motion.div className="card-icon" variants={iconVariants} whileHover="hover">
-                  <img src="/launch.png" alt="Lanza en Amazon" className="icon-image" />
+                  <img src="/launch.webp" alt="Lanza en Amazon" className="icon-image" />
                 </motion.div>
               </div>
 

@@ -21,7 +21,7 @@ export default function Contact() {
         Contactanos
       </motion.h1>
 
-      <div className='wrapp position-relative'>
+      <div className='wrapp position-relative' id='contacto'>
         <motion.img
           src="/textures/pexels-tarcila.webp"
           className='fondo-jg'

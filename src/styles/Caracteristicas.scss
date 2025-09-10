@@ -5,6 +5,15 @@
   overflow: hidden;
   margin-bottom: 5em;
   // Elementos decorativos de fondo
+  h2{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-bottom: 30px;
+    .highlight{
+      color: var(--naranja);
+    }
+  }
   &::before {
     content: '';
     position: absolute;

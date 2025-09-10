@@ -17,6 +17,8 @@ import Segmento from '../components/Segmento'
 import CuadroComparativo from '../components/CuadroComparativo'
 import Estadisticas from '../components/Estadisticas'
 import { TrendingUp, Search, BarChart3 } from "lucide-react"
+import QuienesSomosAlt from '../components/QuienesSomosAlt'
+import Caracteristicas from '../components/Caracteristicas'
 
 
 export default function Home() {
@@ -40,6 +42,26 @@ export default function Home() {
         "Estamos siempre un paso adelante, aplicando inteligencia artificial y nuevas tecnologías para optimizar campañas en tiempo real y adaptarnos a los cambios del marketplace.",
     },
   ]
+  const caracteristicas = [
+    {
+      icon: "🎯",
+      titulo: "Socios de Confianza",
+      descripcion:
+        " Construimos relaciones a largo plazo, convirtiéndonos en un aliado estratégico para tu negocio en Amazon.",
+    },
+    {
+      icon: "👥",
+      titulo: "Servicio Limitado",
+      descripcion:
+        "Priorizamos la calidad, gestionando un número limitado de cuentas para asegurar máxima dedicación en cada proyecto.",
+    },
+    {
+      icon: "♾️",
+      titulo: "Innovación Continua",
+      descripcion:
+        "Estamos siempre un paso adelante, aplicando inteligencia artificial y nuevas tecnologías para optimizar campañas en tiempo real y adaptarnos a los cambios del marketplace.",
+    },
+  ]
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -51,11 +73,13 @@ export default function Home() {
       <MainBannerVideo video="video-banner.mp4" />
       <AppointmentSection />
       <Segmento />
-      <QuienesSomos />
+      {/* <QuienesSomos /> */}
+      <QuienesSomosAlt />
       <ClientsSection />
       <CuadroComparativo />
       <Estadisticas />
-      <Services array={services} title="¿Qué <span class='highlight'>Ofrecemos</span>?" />
+      <Caracteristicas caracteristicas={caracteristicas} title="¿Qué <span class='highlight'>Ofrecemos</span>?" />
+      {/*<Services array={services} title="¿Qué <span class='highlight'>Ofrecemos</span>?" />*/}      
       <SectionAnalytics />
       <Contact />
       <Footer />

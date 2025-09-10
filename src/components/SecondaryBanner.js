@@ -31,7 +31,7 @@ export default function SecondaryBanner() {
         viewport={{ once: true, amount: 0.2 }}
       >
         <motion.img
-          src="/textures/pexels-anete-lusina.jpg"
+          src="/textures/pexels-anete-lusina.webp"
           loading='lazy'
           className='back'
           alt="Image of sand"
