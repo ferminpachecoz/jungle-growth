@@ -88,22 +88,13 @@ export default function Beginner() {
   ]
   return (
     <>
-
-      {/* Head */}
-      <title>Avanzado | Mi Proyecto</title>
-      <meta
-        name="description"
-        content="Aprende conceptos avanzados, estrategias de lanzamiento y optimización para escalar tu negocio en Amazon."
-      />
-      <meta property="og:title" content="Avanzado | Mi Proyecto" />
-      <meta
-        property="og:description"
-        content="Aprende conceptos avanzados, estrategias de lanzamiento y optimización para escalar tu negocio en Amazon."
-      />
-      <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
-      {/* Head */}
-
+      <Helmet>
+        <title>Lanzá tu marca en Amazon | Setup guiado y primeras ventas</title>
+        <meta
+          name="description"
+          content="Acompañamiento de 0 a 1: alta de cuenta, registro de marca, catálogo, pricing y logística. Lanzamiento con PPC para validar rápido y evitar errores costosos."
+        />
+      </Helmet>
       <Header />
       <MainBannerVideo video="video-banner-2.mp4" title="El <span class='highlight'>futuro de tu marca</span> comienza en Amazon" />
       <Services 

@@ -89,7 +89,11 @@ export default function Advanced() {
   return (
     <>
       <Helmet>
-        <title>Avanzado | Mi Proyecto</title>
+        <title>Potenciá tu marca en Amazon | Escalá ventas con PPC + SEO</title>
+        <meta
+          name="description"
+          content="Si ya vendés en Amazon, te ayudamos a escalar: auditoría, optimización de listings, PPC eficiente, mejora de conversión y analítica avanzada para crecer con rentabilidad."
+        />
       </Helmet>
       <Header />
       <MainBannerVideo 
