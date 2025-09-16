@@ -90,6 +90,11 @@
         background: linear-gradient(135deg, var(--verde-claro), var(--verde-oscuro));
         color: white;
       }
+      @media (max-width: 476px){
+        .jungle{
+          padding: 3.5em 1em 1em 1em;
+        }
+      }
 
       .card-title {
         color: white;
@@ -224,6 +229,9 @@
       font-weight: 600;
       color: var(--verde-oscuro);
       margin: 0;
+    }
+    @media (max-width: 476px){
+      display: none;
     }
   }
 

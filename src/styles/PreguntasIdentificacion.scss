@@ -25,6 +25,11 @@
         border-radius: 2px;
         opacity: 0.3;
       }
+      @media (max-width: 476px){
+        &::after{
+          display: none;
+        }
+      }
     }
 
     @media (max-width: 991px) {

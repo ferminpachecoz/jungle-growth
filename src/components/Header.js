@@ -32,7 +32,7 @@ export default function Header() {
           {visible &&
             <span className='links-container'>
               <HashLink to="/advanced">Potenciar mi negocio</HashLink>
-              <HashLink to="/advanced">Quiero empezar</HashLink>
+              <HashLink to="/beginner">Quiero empezar</HashLink>
             </span>
           }
         </HashLink>

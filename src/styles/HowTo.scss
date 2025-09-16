@@ -9,25 +9,15 @@
 }
 .section-bg{
   .image{
-    /* background-image: url("../../public/textures/pexels-roman-odintsov.webp"); */
+    background-image: url("../../public/mockup-phone-2.webp");
     background-size: cover;
-    height: 700px;
-    border-radius: 20px;
-    position: relative;
-    .mockup-cont{
-      position: absolute;
-      bottom: 10px;
-      right: 150px;
-      .mockup-img{
-        width: 110%;
-        height: auto;
-        z-index: 10000;
-      }
-    }
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(3deg);
   }
 }
 .pasos{
-  padding-left: 3em !important;
+  padding: 3em 0em 3em 3em !important;
 }
 .step-number {
   width: 4rem;
@@ -86,13 +76,8 @@
 @media (max-width: 450px){
   .section-bg{
     .image{
-      height: 400px;
-      .mockup-cont{
-        right: 60px !important;
-        img{
-          width: 300px !important;
-        }
-      }
+      height: 600px;
+      background-size: cover;
     }
     .pasos{
       padding: 1em !important;

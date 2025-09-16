@@ -63,21 +63,10 @@ export default function HowTo({steps}) {
           </motion.div>
 
           {/* Contenido principal en una fila con dos columnas */}
-          <div className="row align-items-center">
+          <div className="row d-flex align-items-stretch">
             {/* Columna izquierda - Mockup con hojas */}
             <div className="col-lg-6 mb-4 mb-lg-0 image">
-              {/* Mockup sobresaliendo */}
-              <motion.div
-                className='mockup-cont'
-                style={{ zIndex: 10 }}
-                variants={mockupVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                whileHover="hover"
-              >
-                <img src="mockup-phone.webp" loading="lazy" className='mockup-img' alt="Mockup phone" />
-              </motion.div>
+              
             </div>
 
             {/* Columna derecha - Pasos */}

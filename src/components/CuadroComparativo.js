@@ -104,7 +104,7 @@ const CuadroComparativo = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <div className="card-header">
+              <div className="card-header jungle">
                 <h3 className="card-title">
                   <span className="title-icon">🚀</span>
                   Jungle Growth
