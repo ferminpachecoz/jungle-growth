@@ -1,8 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import "../styles/Contact.scss"
+import emailjs from "@emailjs/browser"
 
 export default function Contact() {
+  const [form, setForm] = useState({ name: "", email: "", message: "" })
+  const [loading, setLoading] = useState(false)
+  const [toast, setToast] = useState({ show: false, ok: true, msg: "" })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm(prev => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    if (!form.name || !form.email || !form.message) {
+      setToast({ show: true, ok: false, msg: "Completá todos los campos." })
+      setTimeout(() => setToast({ show: false, ok: true, msg: "" }), 3000)
+      return
+    }
+    setLoading(true)
+    try {
+      const result = await emailjs.send(
+        "service_2hhjoph",
+        "template_rr8ehh5",
+        {
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        },
+        "Iu0IuGSghU1fZ8doS"
+      )
+      console.log("EmailJS result:", result.text)
+      setToast({ show: true, ok: true, msg: "¡Mensaje enviado con éxito!" })
+      setForm({ name: "", email: "", message: "" })
+    } catch (err) {
+      console.error("EmailJS error:", err)
+      setToast({ show: true, ok: false, msg: "Error al enviar. Intentá de nuevo." })
+    } finally {
+      setLoading(false)
+      setTimeout(() => setToast({ show: false, ok: true, msg: "" }), 3000)
+    }
+  }
+
   return (
     <motion.div
       className='contact'
@@ -32,6 +73,19 @@ export default function Contact() {
           viewport={{ once: true }}
         />
 
+        {/* Toast/Pop-up */}
+        {toast.show && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className={`jg-toast ${toast.ok ? "jg-toast--ok" : "jg-toast--err"}`}
+            role="alert"
+          >
+            {toast.msg}
+          </motion.div>
+        )}
+
         <div className='contenedor d-flex flex-wrap'>
           {/* Formulario */}
           <motion.div
@@ -41,7 +95,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <form>
+            <form onSubmit={handleSubmit} noValidate>
               <motion.div
                 className='mb-4'
                 initial={{ opacity: 0 }}
@@ -50,7 +104,15 @@ export default function Contact() {
                 viewport={{ once: true }}
               >
                 <label className='form-label'>Name</label>
-                <input type="text" placeholder='Name' className='form-control' />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder='Name'
+                  className='form-control'
+                  value={form.name}
+                  onChange={handleChange}
+                  required
+                />
               </motion.div>
 
               <motion.div
@@ -61,7 +123,15 @@ export default function Contact() {
                 viewport={{ once: true }}
               >
                 <label className='form-label'>Email</label>
-                <input type="email" placeholder='Email' className='form-control' />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder='Email'
+                  className='form-control'
+                  value={form.email}
+                  onChange={handleChange}
+                  required
+                />
               </motion.div>
 
               <motion.div
@@ -73,19 +143,26 @@ export default function Contact() {
               >
                 <label className='form-label'>Message</label>
                 <textarea
+                  name="message"
                   cols="30"
                   rows="10"
                   className='form-control'
                   placeholder='Message'
+                  value={form.message}
+                  onChange={handleChange}
+                  required
                 ></textarea>
               </motion.div>
 
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                type="submit"
+                className='btn btn-primary'
+                disabled={loading}
+                whileHover={{ scale: loading ? 1 : 1.05 }}
+                whileTap={{ scale: loading ? 1 : 0.95 }}
                 transition={{ type: 'spring', stiffness: 300 }}
               >
-                Send Message
+                {loading ? "Enviando..." : "Send Message"}
               </motion.button>
             </form>
           </motion.div>
