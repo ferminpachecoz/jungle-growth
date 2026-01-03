@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Services from '../components/Services'
@@ -68,19 +67,19 @@ export default function Beginner() {
     ]
   const caracteristicas = [
     {
-      icon: "🎯",
+      icon: "/iconos/strategy-development.webp",
       titulo: "Personalización",
       descripcion:
         "Tu proyecto es único, por eso diseñamos una estrategia exclusiva para ti, con un único objetivo: conseguir los mejores resultados.",
     },
     {
-      icon: "👥",
+      icon: "/iconos/team.webp",
       titulo: "Equipo Dedicado",
       descripcion:
         "Desde el inicio se asignará un equipo de 4 especialistas en las diferentes áreas, con dedicación full focus en escalar tu negocio.",
     },
     {
-      icon: "♾️",
+      icon: "/iconos/quality.webp",
       titulo: "Servicio Premium",
       descripcion:
         "Priorizamos la calidad de nuestros servicios, por ello no gestionamos más de 30 marcas para asegurar la máxima dedicación.",
@@ -96,7 +95,7 @@ export default function Beginner() {
         />
       </Helmet>
       <Header />
-      <MainBannerVideo video="video-banner-2.mp4" title="El <span class='highlight'>futuro de tu marca</span> comienza en Amazon" />
+      <MainBannerVideo video="video-banner-2.mp4" title={<>El <span>futuro de tu marca</span> comienza en Amazon</>} />
       <Services 
         array={array} 
         title="Lo que <span class='highlight'>podemos</span> hacer por vos" 

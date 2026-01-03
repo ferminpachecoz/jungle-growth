@@ -22,8 +22,8 @@ const features = [
 ]
 
 const stats = [
-  { number: "500+", label: "Clientes satisfechos" },
-  { number: "150%", label: "Crecimiento promedio" },
+  { number: "500+", label: "Productos optimizados" },
+  { number: "1500+", label: "Campañas creadas" },
   { number: "24/7", label: "Soporte especializado" },
 ]
 
@@ -52,7 +52,7 @@ export default function QuienesSomosAlt() {
     },
   }
   return (
-    <section className="about-section position-relative overflow-hidden">
+    <section className="about-section position-relative overflow-hidden" id="quienes-somos">
       {/* Fondo */}
       <div className="about-background position-absolute w-100 h-100"></div>
 
@@ -184,8 +184,9 @@ export default function QuienesSomosAlt() {
               <div className="panel-decoration panel-decoration-2"></div>
             </motion.div>
           </div>
-
-          <motion.div className="col-12 mt-5" variants={itemVariants}>
+          
+          {/* Nuestro Equipo */}
+          {/* <motion.div className="col-12 mt-5" variants={itemVariants}>
             <h4 className="founders-title">Nuestro Equipo</h4>
             <div className="founders-container">
               <motion.div
@@ -272,7 +273,7 @@ export default function QuienesSomosAlt() {
                 <div className="founder-decoration"></div>
               </motion.div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

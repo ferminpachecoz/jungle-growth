@@ -10,8 +10,8 @@
     color: white;
     font-size: 45px;
     margin-bottom: 30px;
-    .highlight{
-      color: var(--naranja);
+    span{
+      color: var(--naranja) !important;
     }
     @media (max-width: 476px){
       font-size: 2.1em;
@@ -121,7 +121,7 @@
     }
 
     .icon {
-      font-size: 2rem;
+      width: 50px;
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     }
 

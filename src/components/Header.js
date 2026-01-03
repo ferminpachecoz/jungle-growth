@@ -9,7 +9,7 @@ export default function Header() {
     <header className='header row g-0' id="top">
       <div className='col-lg-6 col-6 d-flex justify-content-start align-items-center'>
         <HashLink smooth to="/#top">
-          <img  src="/logos/logo-amarillo.webp" fetchPriority="high" alt="Logo Jungle Growth" />
+          <img  src="/logos/Logo-Full-Amarillo-Naranja.webp" fetchPriority="high" alt="Logo Jungle Growth" />
         </HashLink>
       </div>
       <div className='burger-container col-6 d-flex justify-content-end align-items-center d-lg-none'>
@@ -20,8 +20,8 @@ export default function Header() {
         <HashLink smooth to="/#services" className='servicios-lg'>
           Servicios
           <span className='services-menu'>
-            <HashLink to="/advanced" className='mb-3'>Vendo en Amazon</HashLink>
-            <HashLink to="/beginner">Quiero empezar</HashLink>
+            <HashLink to="/paid-media" className='mb-3'>Paid Media</HashLink>
+            <HashLink to="/amazon">Amazon Growth</HashLink>
           </span>  
         </HashLink>
         <HashLink to="#" className='services-mobile'>
@@ -36,7 +36,7 @@ export default function Header() {
             </span>
           }
         </HashLink>
-        <HashLink smooth to="/#analytics">Analytics</HashLink>
+        <HashLink smooth to="/#beneficios">Beneficios</HashLink>
         <HashLink smooth to="/#contacto">Contacto</HashLink>
         {/*
           <a href="#" className='button'>Contactanos</a>

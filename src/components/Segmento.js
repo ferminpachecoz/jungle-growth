@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import "../styles/Segmento.scss"
 
-const Segmento = () => {
+const Segmento = ({opcion1, opcion2, title}) => {
   const handleCard1Click = () => {
     console.log("Potencia tu negocio - Saber más")
     // Aquí puedes agregar la navegación o modal
@@ -36,7 +36,7 @@ const Segmento = () => {
           className="text-center mb-5"
         >
           <h1 className="segmento-title">
-            Incursiona en el <span className="highlight" style={{color: "var(--naranja)"}}>ecosistema AMZ</span>
+            {title}
           </h1>
         </motion.div>
 
@@ -54,20 +54,19 @@ const Segmento = () => {
             >
               <div className="card-header">
                 <motion.div className="card-icon" variants={iconVariants} whileHover="hover">
-                  <img src="/enhance.webp" alt="Potencia tu negocio" className="icon-image" />
+                  <img src={opcion1.icon} alt="Potencia tu negocio" className="icon-image" />
                 </motion.div>
               </div>
 
               <div className="card-body">
-                <h3 className="card-title">Potencia tu negocio en Amazon</h3>
+                <h3 className="card-title">{opcion1.title}</h3>
                 <p className="card-description">
-                  ¿Sos vendedor en Amazon y buscás potenciar tu marca al máximo? Somos los indicados para ayudarte a
-                  alcanzar tus objetivos.
+                  {opcion1.description}
                 </p>
               </div>
 
               <div className="card-footer">
-                <a href="/advanced">
+                <a href={opcion1.link}>
                   <motion.button
                     className="card-cta"
                     onClick={handleCard1Click}
@@ -90,7 +89,7 @@ const Segmento = () => {
               <div className="card-decoration decoration-1"></div>
             </motion.div>
           </div>
-
+          
           {/* Card 2 - Lanza en Amazon */}
           <div className="col-lg-6">
             <motion.div
@@ -104,20 +103,19 @@ const Segmento = () => {
             >
               <div className="card-header">
                 <motion.div className="card-icon" variants={iconVariants} whileHover="hover">
-                  <img src="/launch.webp" alt="Lanza en Amazon" className="icon-image" />
+                  <img src={opcion2.icon} alt="Lanza en Amazon" className="icon-image" />
                 </motion.div>
               </div>
 
               <div className="card-body">
-                <h3 className="card-title">Lanza en Amazon!</h3>
+                <h3 className="card-title">{opcion2.title}</h3>
                 <p className="card-description">
-                  ¿Aún no vendes en Amazon? Te guiamos paso a paso para abrir tu cuenta y conquistar esta jungla
-                  digital.
+                  {opcion2.description}
                 </p>
               </div>
 
               <div className="card-footer">
-                <a href="/beginner">
+                <a href={opcion2.link}>
                   <motion.button
                     className="card-cta"
                     onClick={handleCard2Click}

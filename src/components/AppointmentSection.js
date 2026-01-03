@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
 import "../styles/AppointmentSection.scss"
 
-const AppointmentSection = () => {
+const AppointmentSection = ({title, subtitle}) => {
   const handleScheduleClick = () => {
     if (window.Calendly) {
       window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/ferminpacheco87/30min?hide_event_type_details=0&hide_gdpr_banner=0',
+        url: 'https://calendly.com/administracion-junglegrowth/30min?hide_event_type_details=0&hide_gdpr_banner=0',
       });
     } else {
       console.warn("Calendly script not loaded yet.");
@@ -31,10 +31,10 @@ const AppointmentSection = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="cta-title">
-                  ¿Sabías que <span className="highlight">4 de cada 10</span> compras online ocurren en Amazon?
+                  {title}
                 </h2>
                 <p className="cta-subtitle">
-                  Descubre cómo maximizar tus resultados y dominar esta jungla digital.
+                  {subtitle}
                 </p>
               </motion.div>
             </div>

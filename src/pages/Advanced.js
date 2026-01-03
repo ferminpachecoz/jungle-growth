@@ -1,4 +1,3 @@
-import React from 'react'
 import MainBannerVideo from '../components/MainBannerVideo'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -68,19 +67,19 @@ export default function Advanced() {
   ]
   const caracteristicas = [
     {
-      icon: "🎯",
+      icon: "/iconos/strategy-development.webp",
       titulo: "Acompañamiento Estratégico",
       descripcion:
         "No solo gestionamos tu cuenta: nos convertimos en tu socio estratégico para escalar tu negocio en Amazon con una visión a largo plazo.",
     },
     {
-      icon: "👥",
+      icon: "/iconos/team.webp",
       titulo: "Equipo Multidisciplinario",
       descripcion:
         "Asignamos un equipo de especialistas en marketing, data y creatividad que trabajan en conjunto para potenciar tu marca.",
     },
     {
-      icon: "♾️",
+      icon: "/economic-growth.webp",
       titulo: "Crecimiento Escalable",
       descripcion:
         "Diseñamos un plan a medida que te permite crecer de manera rentable y sostenible dentro de Amazon.",
@@ -98,7 +97,7 @@ export default function Advanced() {
       <Header />
       <MainBannerVideo 
         video="/video-banner-3.mp4" 
-        title="¡Haz crecer <span class='highlight'>tu negocio</span> en Amazon!"
+        title={<>¡Haz crecer <span>tu negocio</span> en Amazon!</>}
       />
       <Services 
         array={array} 

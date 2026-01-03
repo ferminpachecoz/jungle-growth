@@ -65,7 +65,7 @@
   color: var(--verde-oscuro);
   font-size: 40px;
 }
-.services-title .highlight{
+.services-title span{
   color: var(--naranja) !important;
 }
 

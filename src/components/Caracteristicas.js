@@ -26,7 +26,7 @@ const Caracteristicas = ({caracteristicas, title}) => {
   }
 
   return (
-    <section className="caracteristicas-premium-section">
+    <section className="caracteristicas-premium-section" id="beneficios">
       {title &&
         <h2 dangerouslySetInnerHTML={{__html: title}}></h2>
       }
@@ -57,7 +57,7 @@ const Caracteristicas = ({caracteristicas, title}) => {
                   }}
                   transition={{ duration: 0.4 }}
                 >
-                  <span className="icon">{caracteristica.icon}</span>
+                  <img src={caracteristica.icon} className="icon" />
                 </motion.div>
 
                 <div className="caracteristica-content">

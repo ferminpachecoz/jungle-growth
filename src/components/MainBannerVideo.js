@@ -1,29 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import React, { useState } from 'react'
 import "../styles/MainBannerVideo.scss"
+import { HashLink } from 'react-router-hash-link'
 
-const words = ["potencial", "impacto", "alcance"]
 
-export default function MainBannerVideo({video, title}) {
+export default function MainBannerVideo({video, title, icons}) {
   const [videoReady, setVideoReady] = useState(false)
-  const [index, setIndex] = useState(0)
-
-  const handleScheduleClick = () => {
-    if (window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/ferminpacheco87/30min?hide_event_type_details=0&hide_gdpr_banner=0',
-      });
-    } else {
-      console.warn("Calendly script not loaded yet.");
-    }
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex(prev => (prev + 1) % words.length)
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [])
 
   return (
     <div className="main-banner position-relative">
@@ -53,46 +34,21 @@ export default function MainBannerVideo({video, title}) {
 
       {/* Contenido del banner */}
       <div className="contenedor d-flex flex-column justify-content-center">
-        {title?
-        <h1 dangerouslySetInnerHTML={{__html: title}}></h1>
-        :
         <h1>
-          Descubre el{" "}
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={words[index]}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.5 }}
-              style={{ display: 'inline-block' }}
-            >
-              {words[index]}
-            </motion.span>
-          </AnimatePresence>{" "}
-          de tu marca en Amazon
+          {title}
         </h1>
-        }
         {/* Boton Viejo */}
-        <button className="d-block d-lg-none">Empezar ya</button>
+        <HashLink to="/#contact" className="d-block d-lg-none">Empezar ya</HashLink>
         {/* Botón nuevo */}
-        {/*
-          <motion.button
-            className="cta-banner"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleScheduleClick}
-          >
-            Agendar Consulta Gratuita
-          </motion.button>
-        */}
-        <div className='iconos-contenedor'>
-          <img src="/iconos/amazon-partner.webp" alt="Amazon partner logo" className='amazon-partner' />
-          <img src="/iconos/Meta-Business-Partner-Badge-Webtopia.webp" alt="Meta partner logo" className='amazon-partner' />
-        </div>
+        {
+          icons &&
+          <div className='iconos-contenedor'>
+            <img src="/iconos/amazon-partner.webp" alt="Amazon partner logo" className='amazon-partner' />
+            <img src="/iconos/Meta-Business-Partner-Badge-Webtopia.webp" alt="Meta partner logo" className='amazon-partner' />
+            <img src="/iconos/google-partner-2.webp" alt="Google Partner Logo" />
+            <img src="/iconos/tiktok-partner.webp" alt="Tiktok Partner Logo" />
+          </div>
+        }
       </div>
     </div>
   )

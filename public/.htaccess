@@ -1,0 +1,14 @@
+# ===== React SPA fallback (Hostinger / Apache-LiteSpeed) =====
+RewriteEngine On
+RewriteBase /
+
+# Sirve archivos reales y directorios tal cual
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Si no existe archivo ni carpeta, envía todo a index.html
+RewriteRule . /index.html [L]
+
+# Opcional: evita que la ruta 404 personalizada rompa assets
+ErrorDocument 404 /index.html

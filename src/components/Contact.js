@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import React, { useState } from "react"
+import { motion } from "framer-motion"
 import "../styles/Contact.scss"
 import emailjs from "@emailjs/browser"
 
@@ -10,16 +10,18 @@ export default function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setForm(prev => ({ ...prev, [name]: value }))
+    setForm((prev) => ({ ...prev, [name]: value }))
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
     if (!form.name || !form.email || !form.message) {
       setToast({ show: true, ok: false, msg: "Completá todos los campos." })
       setTimeout(() => setToast({ show: false, ok: true, msg: "" }), 3000)
       return
     }
+
     setLoading(true)
     try {
       const result = await emailjs.send(
@@ -32,6 +34,7 @@ export default function Contact() {
         },
         "Iu0IuGSghU1fZ8doS"
       )
+
       console.log("EmailJS result:", result.text)
       setToast({ show: true, ok: true, msg: "¡Mensaje enviado con éxito!" })
       setForm({ name: "", email: "", message: "" })
@@ -45,131 +48,126 @@ export default function Contact() {
   }
 
   return (
-    <motion.div
-      className='contact'
+    <motion.section
+      className="contact"
+      id="contact"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
-      id="contact"
     >
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+      {/* Background */}
+      <motion.img
+        src="/textures/pexels-tarcila.webp"
+        className="contact__bg"
+        alt="Imagen de fondo con hojas"
+        initial={{ scale: 1.08, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
-      >
-        Contactanos
-      </motion.h1>
+      />
 
-      <div className='wrapp position-relative' id='contacto'>
-        <motion.img
-          src="/textures/pexels-tarcila.webp"
-          className='fondo-jg'
-          alt="Imagen de fondo con hojas"
-          initial={{ scale: 1.1, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+      {/* Toast */}
+      {toast.show && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          className={`jg-toast ${toast.ok ? "jg-toast--ok" : "jg-toast--err"}`}
+          role="alert"
+          aria-live="polite"
+        >
+          {toast.msg}
+        </motion.div>
+      )}
+
+      <div className="contact__container" id="contacto">
+        <motion.h2
+          className="contact__title"
+          initial={{ opacity: 0, y: -14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-        />
+        >
+          Contactanos
+        </motion.h2>
 
-        {/* Toast/Pop-up */}
-        {toast.show && (
+        <div className="contact__grid">
+          {/* Form */}
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className={`jg-toast ${toast.ok ? "jg-toast--ok" : "jg-toast--err"}`}
-            role="alert"
-          >
-            {toast.msg}
-          </motion.div>
-        )}
-
-        <div className='contenedor d-flex flex-wrap'>
-          {/* Formulario */}
-          <motion.div
-            className='col-lg-6 col-12'
+            className="contact__panel"
             initial={{ x: -30, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <form onSubmit={handleSubmit} noValidate>
-              <motion.div
-                className='mb-4'
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <label className='form-label'>Name</label>
+            <form className="contact__form" onSubmit={handleSubmit} noValidate>
+              <div className="contact__field">
+                <label className="contact__label" htmlFor="contact-name">
+                  Name
+                </label>
                 <input
+                  id="contact-name"
                   type="text"
                   name="name"
-                  placeholder='Name'
-                  className='form-control'
+                  placeholder="Name"
+                  className="contact__input"
                   value={form.name}
                   onChange={handleChange}
                   required
+                  autoComplete="name"
                 />
-              </motion.div>
+              </div>
 
-              <motion.div
-                className='mb-4'
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.4, duration: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <label className='form-label'>Email</label>
+              <div className="contact__field">
+                <label className="contact__label" htmlFor="contact-email">
+                  Email
+                </label>
                 <input
+                  id="contact-email"
                   type="email"
                   name="email"
-                  placeholder='Email'
-                  className='form-control'
+                  placeholder="Email"
+                  className="contact__input"
                   value={form.email}
                   onChange={handleChange}
                   required
+                  autoComplete="email"
                 />
-              </motion.div>
+              </div>
 
-              <motion.div
-                className='mb-4'
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <label className='form-label'>Message</label>
+              <div className="contact__field">
+                <label className="contact__label" htmlFor="contact-message">
+                  Message
+                </label>
                 <textarea
+                  id="contact-message"
                   name="message"
-                  cols="30"
-                  rows="10"
-                  className='form-control'
-                  placeholder='Message'
+                  className="contact__textarea"
+                  placeholder="Message"
                   value={form.message}
                   onChange={handleChange}
                   required
-                ></textarea>
-              </motion.div>
+                  rows={7}
+                />
+              </div>
 
               <motion.button
                 type="submit"
-                className='btn btn-primary'
+                className="contact__button"
                 disabled={loading}
-                whileHover={{ scale: loading ? 1 : 1.05 }}
-                whileTap={{ scale: loading ? 1 : 0.95 }}
-                transition={{ type: 'spring', stiffness: 300 }}
+                whileHover={{ scale: loading ? 1 : 1.02 }}
+                whileTap={{ scale: loading ? 1 : 0.98 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
-                {loading ? "Enviando..." : "Send Message"}
+                {loading ? "Enviando..." : "Enviar mensaje"}
               </motion.button>
             </form>
           </motion.div>
 
-          {/* Imagen del logo */}
+          {/* Logo */}
           <motion.div
-            className='col-lg-6 d-lg-flex d-none align-items-center justify-content-center'
+            className="contact__side"
             initial={{ x: 30, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -177,16 +175,16 @@ export default function Contact() {
           >
             <motion.img
               src="/iconos/iconos-10.webp"
-              loading='lazy'
-              className='logo-jg'
+              loading="lazy"
+              className="contact__logo"
               alt="Icono Jungle Growth Naranja"
-              initial={{ scale: 0.9 }}
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: 'spring', stiffness: 200 }}
+              initial={{ scale: 0.95 }}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 200 }}
             />
           </motion.div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   )
 }
