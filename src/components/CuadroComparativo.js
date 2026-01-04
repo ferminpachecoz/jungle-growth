@@ -108,9 +108,9 @@ const CuadroComparativo = ({agenciasClasicas, jungleGrowth, amazon}) => {
               </div>
 
               {/* Elemento destacado */}
-              <div className="premium-badge">
+              {/* <div className="premium-badge">
                 <span>⭐ Enfoque Premium</span>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
