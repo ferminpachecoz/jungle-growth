@@ -33,7 +33,7 @@ const PaidMediaSection = () => {
         <div className="row align-items-center">
           {/* Columna Izquierda - Card de Beneficios */}
           <motion.div
-            className="col-lg-5 benefits-column"
+            className="col-lg-5 order-2 order-lg-1 benefits-column"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -74,7 +74,7 @@ const PaidMediaSection = () => {
           </motion.div>
           {/* Columna Derecha - Contenido */}
           <motion.div
-            className="col-lg-7 content-column"
+            className="col-lg-7 order-1 order-lg-2 content-column"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

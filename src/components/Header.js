@@ -31,8 +31,8 @@ export default function Header() {
           </p>
           {visible &&
             <span className='links-container'>
-              <HashLink to="/advanced">Potenciar mi negocio</HashLink>
-              <HashLink to="/beginner">Quiero empezar</HashLink>
+              <HashLink to="/paid-media">Paid Media</HashLink>
+              <HashLink to="/amazon">Amazon Growth</HashLink>
             </span>
           }
         </HashLink>
