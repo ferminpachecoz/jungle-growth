@@ -9,7 +9,7 @@ import HowTo from '../components/HowTo'
 import { ChartColumnBig, DatabaseBackup, Settings2, BrainCircuit} from "lucide-react"
 import Contact from '../components/Contact'
 import { Helmet } from 'react-helmet';
-
+import { Lightbulb, Layers, Target, Atom } from "lucide-react"
 
 
 export default function PaidMedia() {
@@ -56,6 +56,50 @@ export default function PaidMedia() {
       icon: BrainCircuit
     },
   ]
+  const paidMedia = {
+    sectionTitle: 'Expertos en <span class="highlight">Paid Media</span> & <span class="highlight">Data Analytics</span>',
+    mainIcon: Atom,
+    benefitsTitle: "Nuestro enfoque en Paid Media",
+    benefits: [
+      {
+        icon: Lightbulb,
+        titulo: "Estrategia guiada por datos",
+        descripcion: "Decisiones basadas en datos reales, no en intuición.",
+      },
+      {
+        icon: Layers,
+        titulo: "Tecnología e inteligencia artificial aplicada",
+        descripcion: "IA para optimizar campañas, acelerar iteraciones y mejorar eficiencia.",
+      },
+      {
+        icon: BrainCircuit,
+        titulo: "Automatización para escalar performance",
+        descripcion: "Automatizamos procesos para escalar sin perder control ni precisión.",
+      },
+      {
+        icon: Target,
+        titulo: "Optimización continua del funnel",
+        descripcion: "Optimizamos cada etapa del funnel para maximizar conversión y rentabilidad.",
+      },
+    ]
+  }
+  const herramientas = [
+    {
+      icon: "/iconos/google-analytics.webp",
+      titulo: "Google Analytics",
+      descripcion: "Entendemos el comportamiento del usuario y medimos el impacto real de cada campaña."
+    },
+    {
+      icon: "/iconos/looker-studio.webp",
+      titulo: "Looker Studio",
+      descripcion: "Visualizamos datos clave en dashboards claros para tomar decisiones rápidas y estratégicas."
+    },
+    {
+      icon: "/iconos/semrush.webp",
+      titulo: "Semrush",
+      descripcion: "Analizamos mercado, competencia y oportunidades para optimizar estrategia, mensajes y performance."
+    },
+  ]
   return (
     <>
       <Helmet>
@@ -71,10 +115,18 @@ export default function PaidMedia() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <Header />
-        <MainBannerVideo video="video-banner-4.mp4" title={<>Paid Media orientado a <span>crecimiento real</span></>} icons={false} />
+        <MainBannerVideo video="video-banner-4.mp4" title={<>Jungle Media Studio <span>escalá con inteligencia</span></>} icons={false} />
         <AppointmentSection title={<>Transformá la publicidad en un <span className='highlight'>motor real de crecimiento</span> para tu negocio</>} subtitle={"Usamos Paid Media estratégico para convertir inversión publicitaria en resultados medibles, sostenibles y escalables."} />
-        <PaidMediaSection />
+        <PaidMediaSection data={paidMedia}>
+          <p className="main-description">
+            En <strong>Jungle Growth</strong> abordamos el <strong>Paid Media</strong> como un sistema de crecimiento, donde la tecnología,la creatividad, los datos y la inteligencia artificial trabajan en conjunto para tomar <strong>mejores decisiones</strong> y <strong>escalar resultados</strong> de forma sostenible.
+          </p>
+          <p className="main-description">
+            No ejecutamos campañas de manera aislada: <strong>construimos estructuras</strong> publicitarias basadas en <strong>análisis profundo</strong>, <strong>automatización</strong> y <strong>aprendizaje continuo</strong>, integrando <strong>performance marketing</strong> con <strong>data analytics</strong> para optimizar cada punto del funnel y <strong>maximizar la rentabilidad</strong>.
+          </p>
+        </PaidMediaSection>
         <Caracteristicas caracteristicas={array} title={"Plataformas donde <span classname='highlight'>activamos y por qué</span>"} />
+        <Caracteristicas caracteristicas={herramientas} title={"Datos que <span>impulsan crecimiento<span/>"} />
         <HowTo steps={steps}/>
         <Contact />
         <Footer />

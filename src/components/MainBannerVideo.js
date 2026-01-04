@@ -43,10 +43,18 @@ export default function MainBannerVideo({video, title, icons}) {
         {
           icons &&
           <div className='iconos-contenedor'>
-            <img src="/iconos/amazon-partner.webp" alt="Amazon partner logo" className='amazon-partner' />
-            <img src="/iconos/Meta-Business-Partner-Badge-Webtopia.webp" alt="Meta partner logo" className='amazon-partner' />
-            <img src="/iconos/google-partner-2.webp" alt="Google Partner Logo" />
-            <img src="/iconos/tiktok-partner.webp" alt="Tiktok Partner Logo" />
+            <div className='square-cont'>
+              <img src="/iconos/amazon.webp" alt="Amazon Logo" />
+            </div>
+            <div className='square-cont'>
+              <img src="/iconos/meta.webp" alt="Meta Logo" />
+            </div>
+            <div className='square-cont'>
+              <img src="/iconos/google.webp" alt="Google Logo" />
+            </div>
+            <div className='square-cont'>
+              <img src="/iconos/tik-tok.webp" alt="Tik Tok Logo" />
+            </div>
           </div>
         }
       </div>

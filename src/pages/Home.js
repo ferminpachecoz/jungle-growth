@@ -10,7 +10,7 @@ import QuienesSomosAlt from '../components/QuienesSomosAlt'
 import Caracteristicas from '../components/Caracteristicas'
 import PaidMediaSection from '../components/PaidMediaSection'
 import AISection from '../components/AISection'
-
+import { Lightbulb, Layers, Target, Atom } from "lucide-react"
 
 export default function Home() {
   const caracteristicas = [
@@ -78,6 +78,29 @@ export default function Home() {
     "Socios estratégicos: éxito compartido y relaciones a largo plazo.",
     'Decimos “no” cuando un producto o estrategia no tiene futuro, para proteger la inversión.',
   ]
+
+  const paidMedia = {
+    sectionTitle: 'Expertos en <span class="highlight">Paid Media</span> & <span class="highlight">Data Analytics</span>',
+    mainIcon: Atom,
+    benefitsTitle: "Publicidad inteligente impulsada por datos",
+    benefits: [
+      {
+        icon: Lightbulb,
+        titulo: "Decisiones inteligentes",
+        descripcion: "Datos que impulsan resultados reales",
+      },
+      {
+        icon: Layers,
+        titulo: "Escalabilidad rentable",
+        descripcion: "Invertís mejor, creces de forma sostenible",
+      },
+      {
+        icon: Target,
+        titulo: "Performance Marketing",
+        descripcion: "Foco total en resultados medibles",
+      },
+    ]
+  }
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -91,7 +114,14 @@ export default function Home() {
       <Segmento opcion1={opcion1} opcion2={opcion2} title={<>Fortalecé tu <span className='higlight'>presencia online</span> </>} />
       {/* <QuienesSomos /> */}
       <QuienesSomosAlt />
-      <PaidMediaSection />
+      <PaidMediaSection data={paidMedia}>
+        <p className="main-description">
+          En <strong>Jungle Growth</strong> impulsamos el crecimiento de marcas mediante <strong>estrategias avanzadas de Paid Media</strong> y <strong>data analytics</strong>. No solo invertimos en publicidad: tomamos <strong>decisiones inteligentes</strong>, <strong>precisas</strong> y orientadas a <strong>resultados reales y sostenibles</strong>.
+        </p>
+        <p className="secondary-description">
+          Gestionamos campañas en <strong>Google Ads</strong>, <strong>Meta Ads</strong>, <strong>TikTok Shop</strong> y otros canales, apoyándonos en <strong>análisis de datos</strong> para <strong>optimizar presupuestos</strong> y <strong>escalar lo que funciona</strong>. Integramos <strong>performance marketing</strong> y <strong>analítica avanzada</strong> para <strong>medir el funnel</strong> y <strong>maximizar la rentabilidad</strong>.
+        </p>
+      </PaidMediaSection>
       <AISection />
       {/* <ClientsSection /> */}
       <CuadroComparativo agenciasClasicas={agenciasClasicas} jungleGrowth={jungleGrowth} amazon={false} />

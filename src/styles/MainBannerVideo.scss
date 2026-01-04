@@ -55,11 +55,20 @@
     display: flex;
     height: 70px;
     margin-top: 20px;
-    img{
-      height: 100%;
-      width: auto;
-      margin-right: 1em;
+    .square-cont{
+      padding: 15px;
+      background-color: white;
       border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      margin-right: 1em;
+      img{
+        width: max-content;
+        height: 100%;
+      }
     }
   }
 }
