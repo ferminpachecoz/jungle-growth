@@ -23,7 +23,7 @@
         height: 4px;
         background: var(--naranja);
         border-radius: 2px;
-        opacity: 0.3;
+        opacity: 0.8;
       }
       @media (max-width: 476px){
         &::after{
@@ -69,7 +69,8 @@
       top: 0;
       bottom: 0;
       width: 4px;
-      background: linear-gradient(135deg, var(--naranja), #d63d1a);
+      /* background: linear-gradient(135deg, var(--naranja), #d63d1a); */
+      background-color: var(--naranja);
       transform: scaleY(0);
       transition: transform 0.3s ease;
     }
@@ -103,7 +104,8 @@
     flex-shrink: 0;
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--verde-claro), var(--verde-oscuro));
+    /* background: linear-gradient(135deg, var(--verde-claro), var(--verde-oscuro)); */
+    background-color: var(--verde-claro);
     border-radius: 50%;
     display: flex;
     align-items: center;

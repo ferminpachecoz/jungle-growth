@@ -30,7 +30,8 @@
       position: absolute;
       width: 60px;
       height: 60px;
-      background: linear-gradient(45deg, var(--naranja), var(--amarillo));
+      /* background: linear-gradient(45deg, var(--naranja), var(--amarillo)); */
+      background-color: var(--naranja);
       border-radius: 50%;
       opacity: 0.3;
       z-index: 10;
@@ -78,7 +79,8 @@
       flex-direction: column;
       align-items: center;
       padding: 20px;
-      background: linear-gradient(135deg, var(--verde-claro), var(--verde-oscuro));
+      /* background: linear-gradient(135deg, var(--verde-claro), var(--verde-oscuro)); */
+      background-color: var(--verde-claro);
       border-radius: 15px;
       color: white;
       cursor: pointer;
@@ -146,7 +148,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(transparent, rgba(10, 80, 32, 1));
+      /* background: linear-gradient(transparent, rgba(10, 80, 32, 1)); */
+      background-color: var(--verde-claro);
       padding: 30px;
       
       .overlay-content {
@@ -184,7 +187,8 @@
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--verde-claro), var(--amarillo));
+      /* background: linear-gradient(135deg, var(--verde-claro), var(--amarillo)); */
+      background-color: var(--amarillo);
       padding: 8px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -322,7 +326,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(10, 80, 32, 1));
+    /* background: linear-gradient(transparent, rgba(10, 80, 32, 1)); */
+    background-color: var(--verde-claro);
     padding: 30px;
     
     .overlay-content {
@@ -360,7 +365,8 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--verde-claro), var(--amarillo));
+    /* background: linear-gradient(135deg, var(--verde-claro), var(--amarillo)); */
+    background-color: var(--verde-claro);
     padding: 8px;
     cursor: pointer;
     transition: all 0.3s ease;

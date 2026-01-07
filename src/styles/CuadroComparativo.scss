@@ -21,7 +21,8 @@
         left: 0;
         right: 0;
         height: 4px;
-        background: linear-gradient(90deg, var(--lila), var(--amarillo));
+        /* background: linear-gradient(90deg, var(--lila), var(--amarillo)); */
+        background-color: var(--naranja);
         border-radius: 2px;
         opacity: 0.8;
       }
@@ -87,7 +88,8 @@
       }
 
       .card-header {
-        background: linear-gradient(135deg, var(--verde-claro), var(--verde-oscuro));
+        /* background: linear-gradient(135deg, var(--verde-claro), var(--verde-oscuro)); */
+        background-color: var(--verde-claro);
         color: white;
       }
       @media (max-width: 476px){

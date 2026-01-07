@@ -84,7 +84,7 @@ export default function QuienesSomosAlt() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                En Jungle Growth somos una agencia especializada en <b>potenciar tu presencia</b> en Amazon. Con <b>amplia experiencia</b> en el ecosistema de e-commerce, nos convertimos en tu socio estratégico para <b>maximizar ventas y visibilidad</b> en la plataforma más grande del mundo.
+                En Jungle Growth somos una agencia especializada en <b>potenciar marcas</b> en Amazon. Con <b>amplia experiencia</b> en el ecosistema de e-commerce, nos convertimos en tu <b>socio estratégico</b> para maximizar ventas y visibilidad en la plataforma más grande del mundo.
               </motion.p>
 
               <motion.p
@@ -94,7 +94,7 @@ export default function QuienesSomosAlt() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                Nuestro enfoque <b>combina estrategias</b> basadas en datos, <b>optimización constante</b> y un <b>profundo entendimiento</b> de los algoritmos de Amazon, garantizando resultados excepcionales y un <b>crecimiento sostenido</b> para nuestros clientes.
+                Nuestro enfoque <b>combina estrategia, datos, tecnología y creatividad</b>, junto con una optimización constante y un profundo entendimiento de los algoritmos de Amazon. Integramos <b>inteligencia artificial y herramientas avanzadas</b> para tomar mejores decisiones, escalar lo que funciona y garantizar resultados excepcionales y un <b>crecimiento sostenido</b> para nuestros clientes.
               </motion.p>
 
               {/* Estadísticas */}

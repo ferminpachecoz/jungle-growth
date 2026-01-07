@@ -53,19 +53,19 @@ export default function Amazon() {
   ]
   const services = [
     {
-      icon: "🎯",
+      icon: "/iconos/deal.webp",
       titulo: "Socios de Confianza",
       descripcion:
         " Construimos relaciones a largo plazo, convirtiéndonos en un aliado estratégico para tu negocio en Amazon.",
     },
     {
-      icon: "👥",
+      icon: "/iconos/quality.webp",
       titulo: "Servicio Limitado",
       descripcion:
         "Priorizamos la calidad, gestionando un número limitado de cuentas para asegurar máxima dedicación en cada proyecto.",
     },
     {
-      icon: "♾️",
+      icon: "/iconos/innovation.webp",
       titulo: "Innovación Continua",
       descripcion:
         "Estamos siempre un paso adelante, aplicando inteligencia artificial y nuevas tecnologías para optimizar campañas en tiempo real y adaptarnos a los cambios del marketplace.",

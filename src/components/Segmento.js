@@ -86,7 +86,6 @@ const Segmento = ({opcion1, opcion2, title}) => {
               </div>
 
               {/* Elemento decorativo */}
-              <div className="card-decoration decoration-1"></div>
             </motion.div>
           </div>
           
@@ -135,7 +134,6 @@ const Segmento = ({opcion1, opcion2, title}) => {
               </div>
 
               {/* Elemento decorativo */}
-              <div className="card-decoration decoration-2"></div>
             </motion.div>
           </div>
         </div>

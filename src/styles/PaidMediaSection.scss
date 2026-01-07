@@ -54,7 +54,8 @@
         left: 0;
         width: 100%;
         height: 3px;
-        background: linear-gradient(90deg, var(--naranja), var(--amarillo));
+        /* background: linear-gradient(90deg, var(--naranja), var(--amarillo)); */
+        background-color: var(--naranja);
         border-radius: 2px;
       }
     }
@@ -153,7 +154,8 @@
     .icon-gradient {
       width: 80px;
       height: 80px;
-      background: linear-gradient(135deg, var(--naranja), var(--amarillo));
+      /* background: linear-gradient(135deg, var(--naranja), var(--amarillo)); */
+      background-color: var(--naranja);
       border-radius: 20px;
       display: flex;
       align-items: center;

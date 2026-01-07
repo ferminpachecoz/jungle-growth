@@ -15,17 +15,17 @@ import { Lightbulb, Layers, Target, Atom } from "lucide-react"
 export default function PaidMedia() {
   const array=[
     {
-      icon: "/iconos/meta.webp",
+      icon: "/iconos/meta-blanco.webp",
       titulo: "Meta Ads",
       descripcion: "Ideales para generación de demanda, construcción de marca y performance. Nos permiten trabajar audiencias, creatividades y mensajes de forma precisa, impactando tanto en etapas tempranas como en conversión y remarketing."
     },
     {
-      icon: "/iconos/google.webp",
+      icon: "/iconos/google-blanco.webp",
       titulo: "Google Ads",
       descripcion: "Fundamental para capturar demanda existente. Trabajamos Search, Display y YouTube para estar presentes cuando el usuario ya está buscando soluciones, productos o marcas, maximizando intención y conversión."
     },
     {
-      icon: "/iconos/tik-tok.webp",
+      icon: "/iconos/tiktok-blanco.webp",
       titulo: "TikTok Ads",
       descripcion: "Clave para captar atención, generar descubrimiento y escalar con creatividad nativa.Utilizamos TikTok para impulsar awareness, testear mensajes rápidamente y conectar con audiencias nuevas de manera auténtica y dinámica."
     },
@@ -85,17 +85,17 @@ export default function PaidMedia() {
   }
   const herramientas = [
     {
-      icon: "/iconos/google-analytics.webp",
+      icon: "/iconos/google-analytics-blanco.webp",
       titulo: "Google Analytics",
       descripcion: "Entendemos el comportamiento del usuario y medimos el impacto real de cada campaña."
     },
     {
-      icon: "/iconos/looker-studio.webp",
+      icon: "/iconos/looker-studio-blanco.webp",
       titulo: "Looker Studio",
       descripcion: "Visualizamos datos clave en dashboards claros para tomar decisiones rápidas y estratégicas."
     },
     {
-      icon: "/iconos/semrush.webp",
+      icon: "/iconos/semrush-blanco.webp",
       titulo: "Semrush",
       descripcion: "Analizamos mercado, competencia y oportunidades para optimizar estrategia, mensajes y performance."
     },
@@ -115,7 +115,7 @@ export default function PaidMedia() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <Header />
-        <MainBannerVideo video="video-banner-4.mp4" title={<>Jungle Media Studio <span>escalá con inteligencia</span></>} icons={false} />
+        <MainBannerVideo title={<>Jungle Media Studio <span>escalá con inteligencia</span></>} icons={false} />
         <AppointmentSection title={<>Transformá la publicidad en un <span className='highlight'>motor real de crecimiento</span> para tu negocio</>} subtitle={"Usamos Paid Media estratégico para convertir inversión publicitaria en resultados medibles, sostenibles y escalables."} />
         <PaidMediaSection data={paidMedia}>
           <p className="main-description">
@@ -126,8 +126,8 @@ export default function PaidMedia() {
           </p>
         </PaidMediaSection>
         <Caracteristicas caracteristicas={array} title={"Plataformas donde <span classname='highlight'>activamos y por qué</span>"} />
-        <Caracteristicas caracteristicas={herramientas} title={"Datos que <span>impulsan crecimiento<span/>"} />
         <HowTo steps={steps}/>
+        <Caracteristicas caracteristicas={herramientas} title={"Datos que <span>impulsan crecimiento<span/>"} />
         <Contact />
         <Footer />
       </ motion.div>
