@@ -15,10 +15,10 @@ import { Lightbulb, Layers, Target, Atom } from "lucide-react"
 export default function Home() {
   const caracteristicas = [
     {
-      icon: "/iconos/deal.webp",
+      icon: "/iconos/deal-3.webp",
       titulo: "Socios de Confianza",
       descripcion:
-        " Construimos relaciones a largo plazo, convirtiéndonos en un aliado estratégico para tu negocio en Amazon.",
+        " Construimos relaciones a largo plazo, convirtiéndonos en un aliado estratégico para tu negocio.",
     },
     {
       icon: "/iconos/quality.webp",
@@ -30,7 +30,7 @@ export default function Home() {
       icon: "/iconos/innovation.webp",
       titulo: "Innovación Continua",
       descripcion:
-        "Estamos siempre un paso adelante, aplicando inteligencia artificial y nuevas tecnologías para optimizar campañas en tiempo real y adaptarnos a los cambios del marketplace.",
+        "Estamos siempre un paso adelante, aplicando inteligencia artificial y nuevas tecnologías para optimizar campañas en tiempo real y adaptarnos a los cambios del mercado.",
     },
   ]
   const opcion1={

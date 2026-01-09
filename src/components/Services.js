@@ -13,15 +13,9 @@ export default function Services({array, title}) {
   return (
     <section className="services-section position-relative overflow-hidden">
       {/* Fondo degradado */}
-      <div className="services-background position-absolute w-100 h-100"></div>
 
       {/* Elementos decorativos de fondo */}
-      <div className="decorative-elements position-absolute w-100 h-100">
-        <div className="decoration decoration-1"></div>
-        <div className="decoration decoration-2"></div>
-        <div className="decoration decoration-3"></div>
-        <div className="decoration decoration-4"></div>
-      </div>
+    
 
       <div className="container position-relative">
         {/* Encabezado */}
@@ -102,11 +96,7 @@ export default function Services({array, title}) {
       </div>
 
       {/* Elementos decorativos de fondo */}
-      <div className="background-elements">
-        <div className="bg-element element-1"></div>
-        <div className="bg-element element-2"></div>
-        <div className="bg-element element-3"></div>
-      </div>
+      
     </section>
   )
 }

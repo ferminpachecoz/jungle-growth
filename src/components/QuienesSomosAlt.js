@@ -74,7 +74,7 @@ export default function QuienesSomosAlt() {
               viewport={{ once: true }}
             >
               <h2 className="about-title display-4 fw-bold mb-4 lh-sm">
-                Especialistas en el ecosistema de <span className="highlight">Amazon Marketplace</span>
+                <span className="highlight">Tus guías</span> dentro de Amazon
               </h2>
 
               <motion.p
@@ -84,7 +84,7 @@ export default function QuienesSomosAlt() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                En Jungle Growth somos una agencia especializada en <b>potenciar marcas</b> en Amazon. Con <b>amplia experiencia</b> en el ecosistema de e-commerce, nos convertimos en tu <b>socio estratégico</b> para maximizar ventas y visibilidad en la plataforma más grande del mundo.
+                En <b>Jungle Growth</b> trabajamos junto a marcas que buscan crecer, escalar y consolidarse dentro del <b>ecosistema de Amazon</b>. No nos limitamos a ejecutar acciones aisladas: <b>diseñamos estrategias integrales</b> que conectan producto, mercado, publicidad y rentabilidad.
               </motion.p>
 
               <motion.p
@@ -94,7 +94,7 @@ export default function QuienesSomosAlt() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                Nuestro enfoque <b>combina estrategia, datos, tecnología y creatividad</b>, junto con una optimización constante y un profundo entendimiento de los algoritmos de Amazon. Integramos <b>inteligencia artificial y herramientas avanzadas</b> para tomar mejores decisiones, escalar lo que funciona y garantizar resultados excepcionales y un <b>crecimiento sostenido</b> para nuestros clientes.
+                Con un <b>conocimiento profundo</b> del e-commerce y del funcionamiento interno de los algoritmos de <b>Amazon</b>, acompañamos a cada marca en su proceso de <b>crecimiento</b>, desde la optimización inicial hasta el escalado sostenido, siempre con foco en <b>resultados reales y medibles</b>.
               </motion.p>
 
               {/* Estadísticas */}
