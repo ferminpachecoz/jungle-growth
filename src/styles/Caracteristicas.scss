@@ -90,8 +90,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     /* background: linear-gradient(135deg, var(--naranja), #d63d1a); */
     background-color: var(--naranja);
     border-radius: 50%;
@@ -111,7 +111,7 @@
     }
 
     .icon {
-      width: 50px;
+      width: 60px;
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     }
 

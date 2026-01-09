@@ -36,13 +36,13 @@ export default function Home() {
   const opcion1={
     title: "Paid Media",
     description: "Diseñamos y optimizamos campañas publicitarias basadas en datos para atraer clientes, escalar ventas y maximizar el retorno de inversión.",
-    icon: "/paid-media.webp",
+    icon: "/iconos/paid-media.webp",
     link: "/paid-media"
   }
   const opcion2={
     title: "Amazon Growth",
     description: "Acompañamos marcas en su crecimiento dentro de Amazon, optimizando listings, publicidad y estrategia para aumentar visibilidad, ventas y rentabilidad.",
-    icon: "/economic-growth.webp",
+    icon: "/iconos/economic-growth.webp",
     link: "/amazon"
   }
   const agenciasClasicas = [

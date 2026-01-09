@@ -18,13 +18,13 @@ export default function Amazon() {
   const opcion1={
     title: "Lanza en Amazon!",
     description: "¿Aún no vendés en Amazon? Te guiamos paso a paso para abrir tu cuenta y conquistar esta jungla digital.",
-    icon: "/launch.webp",
+    icon: "/iconos/launch.webp",
     link: "/amazon/beginner"
   }
   const opcion2={
     title: "Potencia tu negocio en Amazon",
     description: "Sos vendedor en Amazon y buscás potenciar tu marca al máximo? Somos los indicados para ayudarte a alcanzar tus objetivos.",
-    icon: "/enhance.webp",
+    icon: "/iconos/enhance.webp",
     link: "/amazon/advanced"
   }
   const agenciasClasicas=[

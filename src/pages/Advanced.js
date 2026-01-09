@@ -67,19 +67,19 @@ export default function Advanced() {
   ]
   const caracteristicas = [
     {
-      icon: "/iconos/strategy-development.webp",
+      icon: "/iconos/strategy-development-2.webp",
       titulo: "Acompañamiento Estratégico",
       descripcion:
         "No solo gestionamos tu cuenta: nos convertimos en tu socio estratégico para escalar tu negocio en Amazon con una visión a largo plazo.",
     },
     {
-      icon: "/iconos/team.webp",
+      icon: "/iconos/team-2.webp",
       titulo: "Equipo Multidisciplinario",
       descripcion:
         "Asignamos un equipo de especialistas en marketing, data y creatividad que trabajan en conjunto para potenciar tu marca.",
     },
     {
-      icon: "/economic-growth.webp",
+      icon: "/iconos/economic-growth-2.webp",
       titulo: "Crecimiento Escalable",
       descripcion:
         "Diseñamos un plan a medida que te permite crecer de manera rentable y sostenible dentro de Amazon.",

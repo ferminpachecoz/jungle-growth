@@ -79,7 +79,7 @@ export default function Beginner() {
         "Desde el inicio se asignará un equipo de 4 especialistas en las diferentes áreas, con dedicación full focus en escalar tu negocio.",
     },
     {
-      icon: "/iconos/quality.webp",
+      icon: "/iconos/quality-2.webp",
       titulo: "Servicio Premium",
       descripcion:
         "Priorizamos la calidad de nuestros servicios, por ello no gestionamos más de 30 marcas para asegurar la máxima dedicación.",
