@@ -1,0 +1,252 @@
+.equipo-section {
+  padding: 100px 0;
+  background-color: var(--verde-oscuro);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(209, 153, 250, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(239, 80, 38, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .equipo-header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .equipo-titulo {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--blanco);
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    .highlight-naranja {
+      color: var(--naranja);
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--naranja);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .equipo-subtitulo {
+    font-size: 1.2rem;
+    color: rgba(238, 244, 233, 0.8);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .equipo-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(238, 244, 233, 0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px);
+      border-color: white;
+
+      .imagen-wrapper img {
+        transform: scale(1.1);
+      }
+
+      .overlay-gradient {
+        opacity: 0.7;
+      }
+
+      .decorative-line {
+        width: 100%;
+        background-color: white;
+      }
+    }
+
+    .card-inner {
+      position: relative;
+    }
+
+    .imagen-container {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+    }
+
+    .imagen-wrapper {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+    }
+
+    .overlay-gradient {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(
+        to top,
+        rgba(3, 50, 32, 0.95) 0%,
+        rgba(3, 50, 32, 0.7) 50%,
+        transparent 100%
+      );
+      opacity: 0.5;
+      transition: opacity 0.4s ease;
+    }
+
+    .info-container {
+      padding: 30px 25px;
+      background: rgba(3, 50, 32, 0.6);
+      backdrop-filter: blur(10px);
+    }
+
+    .miembro-nombre {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--blanco);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .miembro-puesto {
+      font-size: 1rem;
+      color: var(--amarillo);
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .decorative-line {
+      width: 60px;
+      height: 3px;
+      background-color: white;
+      border-radius: 2px;
+      transition: all 0.4s ease;
+    }
+  }
+
+  .equipo-cta {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1px solid rgba(238, 244, 233, 0.1);
+    backdrop-filter: blur(10px);
+
+    .cta-text {
+      font-size: 1.15rem;
+      color: rgba(238, 244, 233, 0.9);
+      margin: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 992px) {
+    padding: 70px 0;
+
+    .equipo-titulo {
+      font-size: 2.2rem;
+    }
+
+    .equipo-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+
+    .equipo-header {
+      margin-bottom: 50px;
+    }
+
+    .equipo-titulo {
+      font-size: 1.8rem;
+    }
+
+    .equipo-subtitulo {
+      font-size: 1rem;
+    }
+
+    .equipo-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+
+    .equipo-card {
+      .imagen-container {
+        height: 300px;
+      }
+
+      .info-container {
+        padding: 25px 20px;
+      }
+
+      .miembro-nombre {
+        font-size: 1.3rem;
+      }
+    }
+
+    .equipo-cta {
+      padding: 30px 20px;
+
+      .cta-text {
+        font-size: 1rem;
+      }
+    }
+  }
+}

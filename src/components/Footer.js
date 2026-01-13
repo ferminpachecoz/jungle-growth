@@ -7,7 +7,7 @@ export default function Footer() {
     <div className='footer d-flex row'>
       <div className='col-lg-3 col-12 p-4'>
         <img src="/logos/logo-amarillo.webp"  alt="Logo Simple Blanco" />
-        <p>En Jungle Growth somos una agencia especializada en potenciar tu presencia en Amazon.</p>
+        <p>En Jungle Growth somos una agencia especializada en ayudar a marcas a escalar resultados y construir crecimiento real a largo plazo.</p>
       </div>
       <div className='col-lg-3 col-12 p-4'>
         <h3>Menú rápido</h3>

@@ -27,7 +27,7 @@ const stats = [
   { number: "24/7", label: "Soporte especializado" },
 ]
 
-export default function QuienesSomosAlt() {
+export default function QuienesSomosAlt({children}) {
   const itemVariants = {
     hidden: { y: 50, opacity: 0 },
     visible: {
@@ -73,29 +73,7 @@ export default function QuienesSomosAlt() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="about-title display-4 fw-bold mb-4 lh-sm">
-                <span className="highlight">Tus guías</span> dentro de Amazon
-              </h2>
-
-              <motion.p
-                className="about-text fs-5 mb-4 lh-base"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                En <b>Jungle Growth</b> trabajamos junto a marcas que buscan crecer, escalar y consolidarse dentro del <b>ecosistema de Amazon</b>. No nos limitamos a ejecutar acciones aisladas: <b>diseñamos estrategias integrales</b> que conectan producto, mercado, publicidad y rentabilidad.
-              </motion.p>
-
-              <motion.p
-                className="about-text fs-5 mb-5 lh-base"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
-                Con un <b>conocimiento profundo</b> del e-commerce y del funcionamiento interno de los algoritmos de <b>Amazon</b>, acompañamos a cada marca en su proceso de <b>crecimiento</b>, desde la optimización inicial hasta el escalado sostenido, siempre con foco en <b>resultados reales y medibles</b>.
-              </motion.p>
+              {children}
 
               {/* Estadísticas */}
               <div className="row g-4">

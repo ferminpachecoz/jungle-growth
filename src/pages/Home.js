@@ -11,6 +11,7 @@ import Caracteristicas from '../components/Caracteristicas'
 import PaidMediaSection from '../components/PaidMediaSection'
 import AISection from '../components/AISection'
 import { Lightbulb, Layers, Target, Atom } from "lucide-react"
+import EquipoSection from '../components/EquipoSection'
 
 export default function Home() {
   const caracteristicas = [
@@ -53,12 +54,8 @@ export default function Home() {
     "Aceptan demasiados clientes y sacrifican calidad y profundidad estratégica.",
     "Prometen resultados irreales y maquillan problemas cuando no llegan.",
     "Ven al cliente como un fee mensual, no como un socio a largo plazo.",
-    "Gastan presupuesto publicitario sin criterio ni análisis profundo de datos.",
     "Aplican tácticas sueltas y de corto plazo, sin visión de escalado.",
-    "Operan con procesos rígidos, lentos y poco adaptables al mercado.",
     "Entregan reportes genéricos, con poca claridad y escasa comunicación.",
-    "Tienen un conocimiento generalista de e-commerce y paid media.",
-    "Toman decisiones por intuición, sin respaldo real en datos."
   ]
 
   const jungleGrowth = [
@@ -67,16 +64,10 @@ export default function Home() {
     "Integración de inteligencia artificial, automatizaciones y software avanzado como parte central de la estrategia.",
     "Uso de IA para creación de contenido, optimización de campañas y análisis predictivo.",
     "Decisiones respaldadas por data analytics, dashboards claros y análisis profundo.",
-    "Enfoque total en crecer la marca: posicionamiento, demanda, rentabilidad y escala.",
-    "Gestión inteligente de presupuestos, orientada a performance, eficiencia y ROAS real.",
     "Portfolio limitado para brindar atención senior y foco estratégico.",
     "Transparencia radical: decimos la verdad, incluso cuando es incómoda.",
-    "Visión de largo plazo con hoja de ruta clara y mejora continua.",
-    "Agilidad operativa: iteramos rápido, reaccionamos con datos y optimizamos constantemente.",
-    "Dominio avanzado de Paid Media (Google Ads, Meta Ads, TikTok Shop) integrado al negocio.",
     "Comunicación proactiva y estratégica: avances, aprendizajes y próximos pasos.",
     "Socios estratégicos: éxito compartido y relaciones a largo plazo.",
-    'Decimos “no” cuando un producto o estrategia no tiene futuro, para proteger la inversión.',
   ]
 
   const paidMedia = {
@@ -109,11 +100,33 @@ export default function Home() {
     >
       <Header />
       {/* <MainBanner /> */}
-      <MainBannerVideo video="video-banner.mp4" title={<>Tus guías en el <span>ecosistema digital</span></>} icons={true} />
+      <MainBannerVideo video="video-banner.mp4" title={<>Tus guías en el <span>ecosistema digital</span></>} animacion={true} icons={true} />
       {/* <AppointmentSection /> */}
       <Segmento opcion1={opcion1} opcion2={opcion2} title={<>Fortalecé tu <span className='higlight'>presencia online</span> </>} />
       {/* <QuienesSomos /> */}
-      <QuienesSomosAlt />
+      <QuienesSomosAlt>
+        <h2 className="about-title display-4 fw-bold mb-4 lh-sm">
+          Especialistas en el ecosistema de <span className="highlight">Amazon Marketplace</span>
+        </h2>
+        <motion.p
+          className="about-text fs-5 mb-4 lh-base"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          En Jungle Growth somos una agencia especializada en <b>potenciar tu presencia</b> en Amazon. <b>Con amplia experiencia</b> en el ecosistema de e-commerce, nos convertimos en tu socio estratégico para <b>maximizar ventas y visibilidad</b> en la plataforma más grande del mundo.
+        </motion.p>
+        <motion.p
+          className="about-text fs-5 mb-5 lh-base"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          Nuestro enfoque <b>combina estrategias</b> basadas en datos, <b>optimización constante</b> y un <b>profundo entendimiento</b> de los algoritmos de Amazon, garantizando resultados excepcionales y un <b>crecimiento sostenido</b> para nuestros clientes.
+        </motion.p>
+      </QuienesSomosAlt>
       <PaidMediaSection data={paidMedia}>
         <p className="main-description">
           En <strong>Jungle Growth</strong> impulsamos el crecimiento de marcas mediante <strong>estrategias avanzadas de Paid Media</strong> y <strong>data analytics</strong>. No solo invertimos en publicidad: tomamos <strong>decisiones inteligentes</strong>, <strong>precisas</strong> y orientadas a <strong>resultados reales y sostenibles</strong>.
@@ -123,6 +136,7 @@ export default function Home() {
         </p>
       </PaidMediaSection>
       <AISection />
+      <EquipoSection />
       {/* <ClientsSection /> */}
       <CuadroComparativo agenciasClasicas={agenciasClasicas} jungleGrowth={jungleGrowth} amazon={false} />
       {/* <Estadisticas /> */}

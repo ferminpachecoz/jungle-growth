@@ -53,7 +53,7 @@ export default function Amazon() {
   ]
   const services = [
     {
-      icon: "/iconos/deal.webp",
+      icon: "/iconos/deal-3.webp",
       titulo: "Socios de Confianza",
       descripcion:
         " Construimos relaciones a largo plazo, convirtiéndonos en un aliado estratégico para tu negocio en Amazon.",
@@ -89,7 +89,29 @@ export default function Amazon() {
       <MainBannerVideo video="video-banner.mp4" title={<>Descubre el <span>potencial</span> de tu marca en Amazon</>} icons={false} />
       <AppointmentSection title={<>¿Sabías que <span className="highlight">4 de cada 10</span> compras online ocurren en Amazon?</>} subtitle={"Descubre cómo maximizar tus resultados y dominar esta jungla digital."} />
       <Segmento opcion1={opcion1} opcion2={opcion2} title={<>Incursiona en el <span>sistema AMZ</span></>} />
-      <QuienesSomosAlt />
+      <QuienesSomosAlt>
+        <h2 className="about-title display-4 fw-bold mb-4 lh-sm">
+          <span className="highlight">Tus guías</span> dentro de Amazon
+        </h2>
+        <motion.p
+          className="about-text fs-5 mb-4 lh-base"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          En <b>Jungle Growth</b> trabajamos junto a marcas que buscan crecer, escalar y consolidarse dentro del <b>ecosistema de Amazon</b>. No nos limitamos a ejecutar acciones aisladas: <b>diseñamos estrategias integrales</b> que conectan producto, mercado, publicidad y rentabilidad.
+        </motion.p>
+        <motion.p
+          className="about-text fs-5 mb-5 lh-base"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          Con un <b>conocimiento profundo</b> del e-commerce y del funcionamiento interno de los algoritmos de <b>Amazon</b>, acompañamos a cada marca en su proceso de <b>crecimiento</b>, desde la optimización inicial hasta el escalado sostenido, siempre con foco en <b>resultados reales y medibles</b>.
+        </motion.p>
+      </QuienesSomosAlt>
       <ClientsSection />
       <CuadroComparativo agenciasClasicas={agenciasClasicas} jungleGrowth={jungleGrowth} amazon={true} />
       <Estadisticas />

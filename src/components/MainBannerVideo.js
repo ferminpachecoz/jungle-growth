@@ -1,10 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "../styles/MainBannerVideo.scss"
 import { HashLink } from 'react-router-hash-link'
 
 
-export default function MainBannerVideo({video, title, icons}) {
+export default function MainBannerVideo({video, title, icons, animacion}) {
   const [videoReady, setVideoReady] = useState(false)
+
+  // Lógica para las palabras dinámicas
+  const words = ["el ecosistema ", "la selva ", "la jungla "];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 2000); // Cambia cada 2 segundos
+
+    return () => clearInterval(interval);
+  }, [words.length]);
 
   return (
     <div className="main-banner position-relative">
@@ -34,9 +46,19 @@ export default function MainBannerVideo({video, title, icons}) {
 
       {/* Contenido del banner */}
       <div className="contenedor d-flex flex-column justify-content-center">
-        <h1>
-          {title}
-        </h1>
+        {animacion?
+          <h1 className="titulo-dinamico">
+            Tus guías en <br />
+            <span key={words[index]} className="word-fade highlight">
+              {words[index]}
+            </span>
+            {" digital"}
+          </h1>
+          : 
+          <h1>
+            {title}
+          </h1>
+        }
         {/* Boton Viejo */}
         <HashLink to="/#contact" className="d-block d-lg-none">Empezar ya</HashLink>
         {/* Botón nuevo */}
