@@ -3,7 +3,7 @@ import "../styles/MainBannerVideo.scss"
 import { HashLink } from 'react-router-hash-link'
 
 
-export default function MainBannerVideo({video, title, icons, animacion}) {
+export default function MainBannerVideo({video, title, icons, animacion, opacity}) {
   const [videoReady, setVideoReady] = useState(false)
 
   // Lógica para las palabras dinámicas
@@ -42,7 +42,10 @@ export default function MainBannerVideo({video, title, icons, animacion}) {
         onCanPlay={() => setVideoReady(true)}
       />
 
-      <div className="video-overlay" />
+      <div 
+        className="video-overlay" 
+        style={{backgroundColor: `rgba(0, 0, 0, ${opacity})`}} 
+      />
 
       {/* Contenido del banner */}
       <div className="contenedor d-flex flex-column justify-content-center">

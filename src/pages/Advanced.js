@@ -96,8 +96,9 @@ export default function Advanced() {
       </Helmet>
       <Header />
       <MainBannerVideo 
-        video="/video-banner-3.mp4" 
+        video="/video-banner-amz-subs.mp4" 
         title={<>¡Haz crecer <span>tu negocio</span> en Amazon!</>}
+        opacity="0.4"
       />
       <Services 
         array={array} 

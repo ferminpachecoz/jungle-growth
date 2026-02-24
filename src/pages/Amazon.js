@@ -86,7 +86,12 @@ export default function Amazon() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <Header />
-      <MainBannerVideo video="video-banner.mp4" title={<>Descubre el <span>potencial</span> de tu marca en Amazon</>} icons={false} />
+      <MainBannerVideo 
+        video="video-banner.mp4" 
+        title={<>Descubre el <span>potencial</span> de tu marca en Amazon</>} 
+        icons={false} 
+        opacity="0.4"
+      />
       <AppointmentSection title={<>¿Sabías que <span className="highlight">4 de cada 10</span> compras online ocurren en Amazon?</>} subtitle={"Descubre cómo maximizar tus resultados y dominar esta jungla digital."} />
       <Segmento opcion1={opcion1} opcion2={opcion2} title={<>Incursiona en el <span>sistema AMZ</span></>} />
       <QuienesSomosAlt>

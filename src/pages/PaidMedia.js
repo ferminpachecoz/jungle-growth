@@ -115,7 +115,12 @@ export default function PaidMedia() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <Header />
-        <MainBannerVideo title={<>Jungle Media Studio <span>escalá con inteligencia</span></>} icons={false} />
+        <MainBannerVideo 
+          title={<>Jungle Media Studio <span>escalá con inteligencia</span></>} 
+          icons={false} 
+          video="video-paid-media.mp4" 
+          opacity="0.7"
+        />
         <AppointmentSection title={<>Transformá la publicidad en un <span className='highlight'>motor real de crecimiento</span> para tu negocio</>} subtitle={"Usamos Paid Media estratégico para convertir inversión publicitaria en resultados medibles, sostenibles y escalables."} />
         <PaidMediaSection data={paidMedia}>
           <p className="main-description">

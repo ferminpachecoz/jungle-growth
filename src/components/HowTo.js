@@ -65,7 +65,7 @@ export default function HowTo({steps}) {
           {/* Contenido principal en una fila con dos columnas */}
           <div className="row d-flex align-items-stretch">
             {/* Columna izquierda - Mockup con hojas */}
-            <div className="col-lg-6 mb-4 mb-lg-0 image">
+            <div className="col-lg-6 d-none d-lg-block mb-4 mb-lg-0 image">
               
             </div>
 

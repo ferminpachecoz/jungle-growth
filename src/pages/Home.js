@@ -100,7 +100,13 @@ export default function Home() {
     >
       <Header />
       {/* <MainBanner /> */}
-      <MainBannerVideo video="video-banner.mp4" title={<>Tus guías en el <span>ecosistema digital</span></>} animacion={true} icons={true} />
+      <MainBannerVideo 
+        video="video-banner.mp4" 
+        title={<>Tus guías en el <span>ecosistema digital</span></>} 
+        animacion={true} 
+        icons={true} 
+        opacity="0.4"
+      />
       {/* <AppointmentSection /> */}
       <Segmento opcion1={opcion1} opcion2={opcion2} title={<>Fortalecé tu <span className='higlight'>presencia online</span> </>} />
       {/* <QuienesSomos /> */}
@@ -136,7 +142,7 @@ export default function Home() {
         </p>
       </PaidMediaSection>
       <AISection />
-      <EquipoSection />
+      {/* <EquipoSection /> */}
       {/* <ClientsSection /> */}
       <CuadroComparativo agenciasClasicas={agenciasClasicas} jungleGrowth={jungleGrowth} amazon={false} />
       {/* <Estadisticas /> */}

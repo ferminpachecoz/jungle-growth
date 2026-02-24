@@ -95,7 +95,11 @@ export default function Beginner() {
         />
       </Helmet>
       <Header />
-      <MainBannerVideo video="video-banner-2.mp4" title={<>El <span>futuro de tu marca</span> comienza en Amazon</>} />
+      <MainBannerVideo 
+        video="/video-banner-amz-subs.mp4" 
+        title={<>El <span>futuro de tu marca</span> comienza en Amazon</>} 
+        opacity="0.4"
+      />
       <Services 
         array={array} 
         title="Lo que <span class='highlight'>podemos</span> hacer por vos" 
